@@ -451,15 +451,7 @@ function initPartnerForm() {
 
   if (!form || !result || !mailButton) return;
 
-  mailButton.addEventListener("click", () => {
-    const mailto = mailButton.dataset.mailto;
-    if (!mailto) return;
-    window.location.href = mailto;
-  });
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
+  const buildMailto = () => {
     const formData = new FormData(form);
     const details = {
       name: formData.get("name")?.toString().trim() || "",
@@ -483,10 +475,26 @@ function initPartnerForm() {
       details.message || "-",
     ].join("\n");
 
-    mailButton.dataset.mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(getCopy("mailSubject"))}&body=${encodeURIComponent(
+    return `mailto:${contactEmail}?subject=${encodeURIComponent(getCopy("mailSubject"))}&body=${encodeURIComponent(
       body,
     )}`;
-    mailButton.disabled = false;
+  };
+
+  mailButton.addEventListener("click", () => {
+    let mailto = mailButton.dataset.mailto;
+    if (!mailto) {
+      if (!form.reportValidity()) return;
+      mailto = buildMailto();
+      mailButton.dataset.mailto = mailto;
+      result.hidden = false;
+    }
+    window.location.href = mailto;
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    mailButton.dataset.mailto = buildMailto();
     result.hidden = false;
     mailButton.focus();
   });
