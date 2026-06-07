@@ -141,7 +141,8 @@ const copy = {
     formSubmit: "Prepare partnership email",
     formNote: "The form prepares an email to kigalicouncil@qsimpact.org. No data is sent automatically.",
     mailReady: "Your partnership email is ready.",
-    mailOpen: "Open email",
+    mailOpen: "Open prepared email",
+    mailFallback: "If your email app does not open, send the message manually to kigalicouncil@qsimpact.org.",
     contactEyebrow: "Contact",
     contactHeading: "Start a conversation with QS Impact Kigali Council.",
     contactLocation: "Kigali, Rwanda",
@@ -297,7 +298,8 @@ const copy = {
     formSubmit: "Tegura email y'ubufatanye",
     formNote: "Iyi fomu itegura email igana kuri kigalicouncil@qsimpact.org. Nta makuru yoherezwa ako kanya.",
     mailReady: "Email y'ubufatanye irateguwe.",
-    mailOpen: "Fungura email",
+    mailOpen: "Fungura email yateguwe",
+    mailFallback: "Niba porogaramu ya email idafungutse, ohereza ubutumwa kuri kigalicouncil@qsimpact.org.",
     contactEyebrow: "Twandikire",
     contactHeading: "Tangira ikiganiro na QS Impact Kigali Council.",
     contactLocation: "Kigali, Rwanda",
@@ -445,9 +447,15 @@ function initProgramFilters() {
 function initPartnerForm() {
   const form = document.getElementById("partnerForm");
   const result = document.getElementById("mailResult");
-  const link = document.getElementById("mailLink");
+  const mailButton = document.getElementById("mailLink");
 
-  if (!form || !result || !link) return;
+  if (!form || !result || !mailButton) return;
+
+  mailButton.addEventListener("click", () => {
+    const mailto = mailButton.dataset.mailto;
+    if (!mailto) return;
+    window.location.href = mailto;
+  });
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -475,11 +483,12 @@ function initPartnerForm() {
       details.message || "-",
     ].join("\n");
 
-    link.href = `mailto:${contactEmail}?subject=${encodeURIComponent(getCopy("mailSubject"))}&body=${encodeURIComponent(
+    mailButton.dataset.mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(getCopy("mailSubject"))}&body=${encodeURIComponent(
       body,
     )}`;
+    mailButton.disabled = false;
     result.hidden = false;
-    link.focus();
+    mailButton.focus();
   });
 }
 

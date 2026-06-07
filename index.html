@@ -435,7 +435,12 @@
             </p>
             <div class="mail-result" id="mailResult" hidden>
               <p data-i18n="mailReady">Your partnership email is ready.</p>
-              <a class="button secondary full" href="#" id="mailLink" data-i18n="mailOpen">Open email</a>
+              <button class="button secondary full" type="button" id="mailLink" disabled data-i18n="mailOpen">
+                Open prepared email
+              </button>
+              <p class="mail-fallback" data-i18n="mailFallback">
+                If your email app does not open, send the message manually to kigalicouncil@qsimpact.org.
+              </p>
             </div>
           </form>
         </div>
