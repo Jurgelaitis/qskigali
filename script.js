@@ -1,4 +1,5 @@
-const contactEmail = "kigalicouncil@qsimpact.org";
+const web3FormsEndpoint = "https://api.web3forms.com/submit";
+const web3FormsAccessKeyPlaceholder = "PASTE_WEB3FORMS_ACCESS_KEY_HERE";
 
 const copy = {
   en: {
@@ -138,24 +139,18 @@ const copy = {
     interestGeneral: "General partnership",
     formMessage: "Message",
     formMessagePlaceholder: "Briefly describe how you would like to collaborate.",
-    formSubmit: "Prepare partnership email",
-    formNote: "The form prepares an email to kigalicouncil@qsimpact.org. No data is sent automatically.",
-    mailReady: "Your partnership email is ready.",
-    mailOpen: "Open prepared email",
-    mailFallback: "If your email app does not open, send the message manually to kigalicouncil@qsimpact.org.",
+    formSubmit: "Send partnership inquiry",
+    formNote: "Submissions are sent securely to QS Impact Kigali Council. No email app is required.",
+    formSending: "Sending your inquiry...",
+    formSuccess: "Thank you. Your partnership inquiry has been sent.",
+    formError: "Something went wrong. Please try again or contact kigalicouncil@qsimpact.org.",
+    formConfigMissing: "The form is ready, but a Web3Forms access key must be added before launch.",
     contactEyebrow: "Contact",
     contactHeading: "Start a conversation with QS Impact Kigali Council.",
     contactLocation: "Kigali, Rwanda",
     footerCopy: "Youth-led sustainable development, climate resilience, and community transformation in Rwanda.",
     footerCta: "Become a partner",
-    mailSubject: "Partnership inquiry - QS Impact Kigali Council",
-    mailBodyHeader: "Hello QS Impact Kigali Council,",
-    mailBodyIntro: "I would like to discuss a partnership opportunity.",
-    mailBodyName: "Name",
-    mailBodyOrganization: "Organization",
-    mailBodyEmail: "Email",
-    mailBodyInterest: "Area of interest",
-    mailBodyMessage: "Message",
+    formSentButton: "Inquiry sent",
   },
   rw: {
     metaTitle: "QS Impact Kigali Council | Iterambere rirambye riyobowe n'urubyiruko mu Rwanda",
@@ -295,24 +290,18 @@ const copy = {
     interestGeneral: "Ubufatanye rusange",
     formMessage: "Ubutumwa",
     formMessagePlaceholder: "Andika muri make uko mwifuza gukorana.",
-    formSubmit: "Tegura email y'ubufatanye",
-    formNote: "Iyi fomu itegura email igana kuri kigalicouncil@qsimpact.org. Nta makuru yoherezwa ako kanya.",
-    mailReady: "Email y'ubufatanye irateguwe.",
-    mailOpen: "Fungura email yateguwe",
-    mailFallback: "Niba porogaramu ya email idafungutse, ohereza ubutumwa kuri kigalicouncil@qsimpact.org.",
+    formSubmit: "Ohereza ubusabe bw'ubufatanye",
+    formNote: "Ubusabe bwoherezwa mu buryo butekanye kuri QS Impact Kigali Council. Nta porogaramu ya email ikenewe.",
+    formSending: "Ubusabe burimo koherezwa...",
+    formSuccess: "Murakoze. Ubusabe bw'ubufatanye bwoherejwe.",
+    formError: "Habaye ikibazo. Mwongere mugerageze cyangwa mwandikire kigalicouncil@qsimpact.org.",
+    formConfigMissing: "Iyi fomu iriteguye, ariko hakenewe Web3Forms access key mbere yo kuyitangiza.",
     contactEyebrow: "Twandikire",
     contactHeading: "Tangira ikiganiro na QS Impact Kigali Council.",
     contactLocation: "Kigali, Rwanda",
     footerCopy: "Iterambere rirambye, guhangana n'ikirere n'impinduka mu baturage biyobowe n'urubyiruko mu Rwanda.",
     footerCta: "Ba umufatanyabikorwa",
-    mailSubject: "Ubusabe bw'ubufatanye - QS Impact Kigali Council",
-    mailBodyHeader: "Muraho QS Impact Kigali Council,",
-    mailBodyIntro: "Ndifuza kuganira ku mahirwe y'ubufatanye.",
-    mailBodyName: "Izina",
-    mailBodyOrganization: "Ikigo",
-    mailBodyEmail: "Email",
-    mailBodyInterest: "Aho wifuza gufatanya",
-    mailBodyMessage: "Ubutumwa",
+    formSentButton: "Ubusabe bwoherejwe",
   },
 };
 
@@ -446,57 +435,58 @@ function initProgramFilters() {
 
 function initPartnerForm() {
   const form = document.getElementById("partnerForm");
-  const result = document.getElementById("mailResult");
-  const mailButton = document.getElementById("mailLink");
+  const status = document.getElementById("formStatus");
+  const statusText = status?.querySelector("p");
+  const submitButton = form?.querySelector('button[type="submit"]');
+  const accessKeyInput = form?.querySelector('input[name="access_key"]');
 
-  if (!form || !result || !mailButton) return;
+  if (!form || !status || !statusText || !submitButton || !accessKeyInput) return;
 
-  const buildMailto = () => {
-    const formData = new FormData(form);
-    const details = {
-      name: formData.get("name")?.toString().trim() || "",
-      organization: formData.get("organization")?.toString().trim() || "",
-      email: formData.get("email")?.toString().trim() || "",
-      interest: formData.get("interest")?.toString().trim() || "",
-      message: formData.get("message")?.toString().trim() || "",
-    };
-
-    const body = [
-      getCopy("mailBodyHeader"),
-      "",
-      getCopy("mailBodyIntro"),
-      "",
-      `${getCopy("mailBodyName")}: ${details.name}`,
-      `${getCopy("mailBodyOrganization")}: ${details.organization}`,
-      `${getCopy("mailBodyEmail")}: ${details.email}`,
-      `${getCopy("mailBodyInterest")}: ${details.interest}`,
-      "",
-      `${getCopy("mailBodyMessage")}:`,
-      details.message || "-",
-    ].join("\n");
-
-    return `mailto:${contactEmail}?subject=${encodeURIComponent(getCopy("mailSubject"))}&body=${encodeURIComponent(
-      body,
-    )}`;
+  const setFormStatus = (type, messageKey) => {
+    status.dataset.status = type;
+    statusText.textContent = getCopy(messageKey);
+    status.hidden = false;
   };
 
-  mailButton.addEventListener("click", () => {
-    let mailto = mailButton.dataset.mailto;
-    if (!mailto) {
-      if (!form.reportValidity()) return;
-      mailto = buildMailto();
-      mailButton.dataset.mailto = mailto;
-      result.hidden = false;
-    }
-    window.location.href = mailto;
-  });
-
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    mailButton.dataset.mailto = buildMailto();
-    result.hidden = false;
-    mailButton.focus();
+    const accessKey = accessKeyInput.value.trim();
+    if (!accessKey || accessKey === web3FormsAccessKeyPlaceholder) {
+      setFormStatus("warning", "formConfigMissing");
+      return;
+    }
+
+    setFormStatus("loading", "formSending");
+    submitButton.disabled = true;
+
+    try {
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData);
+
+      const response = await fetch(web3FormsEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Web3Forms submission failed");
+      }
+
+      form.reset();
+      accessKeyInput.value = accessKey;
+      setFormStatus("success", "formSuccess");
+      submitButton.disabled = false;
+    } catch (error) {
+      console.error(error);
+      setFormStatus("error", "formError");
+      submitButton.disabled = false;
+    }
   });
 }
 

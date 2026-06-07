@@ -396,7 +396,16 @@
             </div>
           </div>
 
-          <form class="partner-form" id="partnerForm">
+          <form
+            class="partner-form"
+            id="partnerForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input type="hidden" name="access_key" value="PASTE_WEB3FORMS_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New partnership inquiry - QS Impact Kigali Council" />
+            <input type="hidden" name="from_name" value="QS Kigali Website" />
+            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" />
             <p class="label" data-i18n="formLabel">Partnership inquiry</p>
             <label>
               <span data-i18n="formName">Name</span>
@@ -429,18 +438,12 @@
                 placeholder="Briefly describe how you would like to collaborate."
               ></textarea>
             </label>
-            <button class="button primary full" type="submit" data-i18n="formSubmit">Prepare partnership email</button>
+            <button class="button primary full" type="submit" data-i18n="formSubmit">Send partnership inquiry</button>
             <p class="form-note" data-i18n="formNote">
-              The form prepares an email to kigalicouncil@qsimpact.org. No data is sent automatically.
+              Submissions are sent securely to QS Impact Kigali Council. No email app is required.
             </p>
-            <div class="mail-result" id="mailResult" hidden>
-              <p data-i18n="mailReady">Your partnership email is ready.</p>
-              <button class="button secondary full" type="button" id="mailLink" data-i18n="mailOpen">
-                Open prepared email
-              </button>
-              <p class="mail-fallback" data-i18n="mailFallback">
-                If your email app does not open, send the message manually to kigalicouncil@qsimpact.org.
-              </p>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite" hidden>
+              <p></p>
             </div>
           </form>
         </div>

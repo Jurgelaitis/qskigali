@@ -25,7 +25,7 @@ Core communication goals:
 - **Real project visuals:** Uses authentic photos from QS Impact Kigali Council activities in Rwanda.
 - **Program filtering:** Visitors can filter programs by climate, education, and safety themes.
 - **Impact section:** Highlights measurable outcomes from documented council activities.
-- **Partnership inquiry form:** Prepares an email to `kigalicouncil@qsimpact.org` without automatically sending user data.
+- **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
 - **Responsive design:** Optimized for desktop and mobile browsing.
 - **SEO and sharing metadata:** Includes canonical URL, Open Graph, Twitter card metadata, and structured organization data.
 
@@ -51,7 +51,7 @@ This is a static website built with:
 
 - `index.html` for structure and content
 - `styles.css` for responsive visual design
-- `script.js` for language switching, navigation behavior, program filtering, metric animation, and partnership email preparation
+- `script.js` for language switching, navigation behavior, program filtering, metric animation, and Web3Forms partnership inquiry submission
 - Local image assets in the `assets/` folder
 
 No build system, package manager, backend, or database is required.
@@ -111,6 +111,22 @@ Recommended production domain setup:
 
 - Primary: `https://www.qskigali.org/`
 - Redirect: `https://qskigali.org/` to `https://www.qskigali.org/`
+
+## Partnership Form Setup
+
+The partnership form is wired for Web3Forms and posts submissions to:
+
+```text
+https://api.web3forms.com/submit
+```
+
+Before launch, create a Web3Forms access key and replace this placeholder in `index.html`:
+
+```html
+<input type="hidden" name="access_key" value="PASTE_WEB3FORMS_ACCESS_KEY_HERE" />
+```
+
+After the real access key is added, submissions will be delivered through Web3Forms to the email inbox associated with that key. If the placeholder is still present, the site will show a configuration warning instead of pretending the form was sent.
 
 ## Content Notes
 
