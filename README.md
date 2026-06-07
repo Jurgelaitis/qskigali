@@ -114,19 +114,19 @@ Recommended production domain setup:
 
 ## Partnership Form Setup
 
-The partnership form is wired for Web3Forms and posts submissions to:
+The partnership form is configured for Web3Forms and posts submissions to:
 
 ```text
 https://api.web3forms.com/submit
 ```
 
-Before launch, create a Web3Forms access key and replace this placeholder in `index.html`:
+The current Web3Forms access key is already included in `index.html`:
 
 ```html
-<input type="hidden" name="access_key" value="PASTE_WEB3FORMS_ACCESS_KEY_HERE" />
+<input type="hidden" name="access_key" value="0c1c963b-fa57-43c3-970d-b88466e59a18" />
 ```
 
-After the real access key is added, submissions will be delivered through Web3Forms to the email inbox associated with that key. If the placeholder is still present, the site will show a configuration warning instead of pretending the form was sent.
+Before public launch, submit one test inquiry and confirm that it arrives in the inbox connected to this Web3Forms key.
 
 ## Content Notes
 
