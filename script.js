@@ -125,7 +125,8 @@ const copy = {
     gdaTimelineDay3Copy:
       "More than 900 learners at EP Kimihurura and 50 final-year students at GS Rugote joined sessions on climate science, conservation, and youth leadership.",
     gdaGalleryLabel: "Global Days of Action 2026 photo highlights",
-    gdaRwankubaAlt: "Students gathered at GS Rwankuba during Global Day of Action 2026",
+    gdaRwankubaAlt:
+      "GS Rwankuba students and QS Impact Kigali Council leaders holding climate education posters during Global Day of Action 2026",
     gdaGalleryRwankubaTitle: "Launching the 2026 action days",
     gdaGalleryRwankubaCopy: "Discussion, questions, and next steps through the school environmental club.",
     gdaGisoziAlt: "Gisozi I Primary School learners gathered for Global Day of Action 2026",
@@ -319,7 +320,8 @@ const copy = {
     gdaTimelineDay3Copy:
       "Abanyeshuri barenga 900 kuri EP Kimihurura n'abanyeshuri 50 barangiza kuri GS Rugote bitabiriye ibiganiro ku bumenyi bw'ikirere, kubungabunga ibidukikije n'ubuyobozi bw'urubyiruko.",
     gdaGalleryLabel: "Amafoto ya Global Days of Action 2026",
-    gdaRwankubaAlt: "Abanyeshuri bateraniye kuri GS Rwankuba muri Global Day of Action 2026",
+    gdaRwankubaAlt:
+      "Abanyeshuri ba GS Rwankuba n'abayobozi ba QS Impact Kigali Council bafashe posters z'uburezi ku kirere muri Global Day of Action 2026",
     gdaGalleryRwankubaTitle: "Gutangiza iminsi y'ibikorwa ya 2026",
     gdaGalleryRwankubaCopy: "Ibiganiro, ibibazo n'intambwe zikurikira binyuze muri club y'ibidukikije y'ishuri.",
     gdaGisoziAlt: "Abanyeshuri ba Gisozi I Primary School muri Global Day of Action 2026",
