@@ -158,13 +158,14 @@ address {
 }
 
 .site-nav a {
-  min-width: 88px;
+  min-width: 80px;
   padding: 9px 13px;
   border-radius: 6px;
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 750;
   text-align: center;
+  white-space: nowrap;
 }
 
 .site-nav a:hover,
@@ -461,6 +462,16 @@ p {
   color: var(--muted);
 }
 
+.split-heading .eyebrow {
+  color: var(--clay);
+}
+
+.section-standfirst {
+  max-width: 460px;
+  margin: 0;
+  font-size: 1rem;
+}
+
 .section-heading h2,
 .split-heading h2,
 .impact-copy h2,
@@ -621,6 +632,167 @@ p {
 
 .impact-section {
   background: var(--surface-soft);
+}
+
+.global-days-section {
+  background: var(--paper);
+}
+
+.gda-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 20px;
+  align-items: stretch;
+  margin-top: 34px;
+}
+
+.gda-panel {
+  display: grid;
+  align-content: center;
+  padding: 34px;
+  border-radius: var(--radius);
+  background: var(--forest);
+  color: #fff;
+}
+
+.gda-panel .label {
+  color: #f0b342;
+}
+
+.gda-panel p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.gda-panel h3 {
+  max-width: 560px;
+  font-size: 1.8rem;
+}
+
+.gda-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.gda-metrics article {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.gda-metrics strong {
+  display: block;
+  color: #fff;
+  font-size: 1.65rem;
+  font-weight: 900;
+}
+
+.gda-metrics span {
+  display: block;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.gda-hero-image {
+  position: relative;
+  min-height: 480px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--charcoal);
+  box-shadow: var(--shadow);
+}
+
+.gda-hero-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gda-hero-image figcaption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  background: rgba(16, 23, 20, 0.72);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.88rem;
+  font-weight: 720;
+}
+
+.gda-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.gda-timeline article,
+.gda-gallery article {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.72) inset;
+}
+
+.gda-timeline article {
+  padding: 24px;
+  border-top: 4px solid var(--gold);
+}
+
+.gda-timeline time {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.gda-timeline p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.gda-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.gda-gallery article {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}
+
+.gda-gallery img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gda-gallery div {
+  padding: 20px;
+}
+
+.gda-gallery p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .split-layout {
@@ -893,11 +1065,14 @@ p {
   }
 
   .focus-grid,
-  .timeline {
+  .timeline,
+  .gda-timeline,
+  .gda-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .program-card.feature,
+  .gda-feature,
   .split-layout,
   .split-layout.reverse {
     grid-template-columns: 1fr;
@@ -991,6 +1166,9 @@ p {
   .mission-grid,
   .program-grid,
   .impact-stats,
+  .gda-metrics,
+  .gda-timeline,
+  .gda-gallery,
   .partner-pathway,
   .contact-grid,
   .footer-grid {
@@ -1033,6 +1211,11 @@ p {
     height: 280px;
   }
 
+  .gda-hero-image,
+  .gda-hero-image img {
+    min-height: 340px;
+  }
+
   .contact-grid address {
     min-width: 0;
   }
@@ -1073,7 +1256,9 @@ p {
   }
 
   .focus-grid,
-  .timeline {
+  .timeline,
+  .gda-timeline,
+  .gda-gallery {
     grid-template-columns: 1fr;
   }
 
@@ -1086,6 +1271,9 @@ p {
   .focus-grid article,
   .program-copy,
   .timeline article,
+  .gda-panel,
+  .gda-timeline article,
+  .gda-gallery div,
   .partner-pathway article,
   .partner-form {
     padding: 20px;

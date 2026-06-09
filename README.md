@@ -1,6 +1,6 @@
 # QS Impact Kigali Council Website
 
-Official website for **QS Impact Kigali Council**, a youth-led organization based in Kigali, Rwanda. The site presents the council's mission, SDG-aligned focus areas, flagship programs, impact evidence, partnership opportunities, and contact information.
+Official website for **QS Impact Kigali Council**, a youth-led organization based in Kigali, Rwanda. The site presents the council's mission, SDG-aligned focus areas, flagship programs, Global Days of Action participation, impact evidence, partnership opportunities, and contact information.
 
 The website is designed to support the public brand presence of QS Impact Kigali Council under the domain:
 
@@ -15,6 +15,7 @@ Core communication goals:
 - Increase visibility for QS Impact Kigali Council and its programs.
 - Present a credible youth-led sustainable development brand.
 - Highlight climate action, education, safety, and community transformation initiatives.
+- Document the council's Global Days of Action participation since 2024, including 2026 school-based climate education activities.
 - Make it easy for partners, institutions, companies, and development organizations to understand the council's work.
 - Provide a clear path for partnership inquiries.
 
@@ -24,6 +25,7 @@ Core communication goals:
 - **Professional organizational layout:** Corporate-style design with restrained regional and project-related visual accents.
 - **Real project visuals:** Uses authentic photos from QS Impact Kigali Council activities in Rwanda.
 - **Program filtering:** Visitors can filter programs by climate, education, and safety themes.
+- **Global Days of Action tab:** Dedicated section for the council's participation since 2024 and documented 2026 school outreach.
 - **Impact section:** Highlights measurable outcomes from documented council activities.
 - **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
 - **Responsive design:** Optimized for desktop and mobile browsing.
@@ -41,6 +43,9 @@ The site currently presents four core program areas:
 
 - **SDG Champions Program**  
   A school-based leadership and sustainability education program for secondary students.
+
+- **Global Days of Action**  
+  A recurring climate education and youth action platform the council has participated in since 2024. The 2026 documentation highlights five school communities and 3,750+ learners reached through sessions on climate change, carbon offsetting, biodiversity, waste management, tree planting, and youth leadership.
 
 - **Nduba Playground Restoration**  
   A community-led sports and wellbeing micro-restoration project focused on safety, drainage, sanitation, and youth engagement.
@@ -73,7 +78,12 @@ rwanda-project-site/
     ├── community-project-team.jpg
     ├── wetlands-youth-engagement.jpg
     ├── council-school-collaboration.jpg
-    └── school-fees-support.jpg
+    ├── school-fees-support.jpg
+    ├── gda-2026-action-session.jpg
+    ├── gda-2026-rwankuba.jpg
+    ├── gda-2026-gisozi.jpg
+    ├── gda-2026-kimihurura.jpg
+    └── gda-2026-rugote.jpg
 ```
 
 ## Local Preview
@@ -130,7 +140,7 @@ Before public launch, submit one test inquiry and confirm that it arrives in the
 
 ## Content Notes
 
-The website content is based on provided QS Impact Kigali Council project materials, including organization descriptions, 2025 impact highlights, ongoing project concepts, and authentic project photography.
+The website content is based on provided QS Impact Kigali Council project materials, including organization descriptions, 2025 impact highlights, ongoing project concepts, Global Days of Action 2026 documentation, and authentic project photography.
 
 Before public launch, the organization should review:
 
