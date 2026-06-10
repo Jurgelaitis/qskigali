@@ -45,7 +45,7 @@ The site currently presents four core program areas:
   A school-based leadership and sustainability education program for secondary students.
 
 - **Global Days of Action**  
-  A recurring climate education and youth action platform the council has participated in since 2024. The 2026 documentation highlights five school communities and 3,750+ learners reached through sessions on climate change, carbon offsetting, biodiversity, waste management, tree planting, and youth leadership.
+  A recurring climate education and youth action platform the council has participated in since 2024. The 2026 documentation now highlights six school communities and 3,950+ learners documented in available reports through sessions on climate change, carbon offsetting, biodiversity, waste management, tree planting, and youth leadership.
 
 - **Nduba Playground Restoration**  
   A community-led sports and wellbeing micro-restoration project focused on safety, drainage, sanitation, and youth engagement.

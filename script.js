@@ -102,12 +102,12 @@ const copy = {
     gdaIntro:
       "QS Impact Kigali Council joins the Global Days of Action as a practical climate education platform: reaching learners, strengthening environmental responsibility, and connecting local action to a global youth movement.",
     gdaPanelLabel: "2026 documented reach",
-    gdaPanelTitle: "Climate education across five school communities.",
+    gdaPanelTitle: "Climate education across six school communities.",
     gdaPanelCopy:
-      "From 2-4 June 2026, the council delivered climate change, carbon offsetting, biodiversity, waste management, tree planting, and youth leadership sessions across Kigali, Gasabo District, and Rutsiro District.",
+      "Across Global Days of Action 2026, the council delivered climate change, carbon offsetting, biodiversity, waste management, tree planting, and youth leadership sessions across GS Rwankuba, GS Kimisange, Gisozi I Primary School, EP Kimihurura, GS Rugote, and Kagugu.",
     gdaMetricsLabel: "Global Days of Action highlights",
     gdaMetricSince: "participation started",
-    gdaMetricLearners: "learners reached in documented 2026 sessions",
+    gdaMetricLearners: "learners documented in available 2026 reports",
     gdaMetricSchools: "school communities engaged in 2026",
     gdaHeroAlt: "A QS Impact Kigali Council leader engaging students during Global Day of Action 2026",
     gdaHeroCaption: "Interactive climate learning during Global Day of Action 2026.",
@@ -117,7 +117,7 @@ const copy = {
       "QS Impact Kigali Council has been part of Global Days of Action since 2024, using the campaign to mobilize young people around measurable community action.",
     gdaTimelineDay1Title: "GS Rwankuba",
     gdaTimelineDay1Copy:
-      "More than 500 students explored SDG 13, SDG 15, greenhouse gases, biodiversity, carbon offsetting, and practical mitigation actions.",
+      "More than 700 students explored SDG 13, SDG 15, greenhouse gases, biodiversity, carbon offsetting, and practical mitigation actions.",
     gdaTimelineDay2Title: "GS Kimisange & Gisozi I Primary School",
     gdaTimelineDay2Copy:
       "More than 600 learners at GS Kimisange and 1,700+ young learners at Gisozi I Primary School connected daily choices with climate responsibility.",
@@ -297,12 +297,12 @@ const copy = {
     gdaIntro:
       "QS Impact Kigali Council yitabira Global Days of Action nk'urubuga rw'uburezi bufatika ku kirere: kugera ku banyeshuri, gukomeza inshingano zo kurengera ibidukikije no guhuza ibikorwa by'iwacu n'urubyiruko ku rwego mpuzamahanga.",
     gdaPanelLabel: "Umusaruro wanditswe wa 2026",
-    gdaPanelTitle: "Uburezi ku kirere mu mashuri atanu.",
+    gdaPanelTitle: "Uburezi ku kirere mu mashuri atandatu.",
     gdaPanelCopy:
-      "Kuva ku wa 2-4 Kamena 2026, inama yatanze ibiganiro ku mihindagurikire y'ikirere, carbon offsetting, urusobe rw'ibinyabuzima, gucunga imyanda, gutera ibiti n'ubuyobozi bw'urubyiruko i Kigali, mu Karere ka Gasabo no mu Karere ka Rutsiro.",
+      "Muri Global Days of Action 2026, inama yatanze ibiganiro ku mihindagurikire y'ikirere, carbon offsetting, urusobe rw'ibinyabuzima, gucunga imyanda, gutera ibiti n'ubuyobozi bw'urubyiruko kuri GS Rwankuba, GS Kimisange, Gisozi I Primary School, EP Kimihurura, GS Rugote na Kagugu.",
     gdaMetricsLabel: "Ibipimo bya Global Days of Action",
     gdaMetricSince: "hatangiye kwitabirwa",
-    gdaMetricLearners: "abanyeshuri bagezweho mu biganiro bya 2026 byanditswe",
+    gdaMetricLearners: "abanyeshuri banditswe mu makuru ya 2026 aboneka",
     gdaMetricSchools: "amashuri yagezweho muri 2026",
     gdaHeroAlt: "Umuyobozi wa QS Impact Kigali Council aganiriza abanyeshuri muri Global Day of Action 2026",
     gdaHeroCaption: "Kwiga ku kirere mu buryo bw'ibiganiro muri Global Day of Action 2026.",
@@ -312,7 +312,7 @@ const copy = {
       "QS Impact Kigali Council yitabira Global Days of Action kuva mu 2024, ikoresha ubu bukangurambaga mu guhuza urubyiruko ku bikorwa bifatika bipimwa.",
     gdaTimelineDay1Title: "GS Rwankuba",
     gdaTimelineDay1Copy:
-      "Abanyeshuri barenga 500 baganiriye kuri SDG 13, SDG 15, greenhouse gases, urusobe rw'ibinyabuzima, carbon offsetting n'ibikorwa byo kugabanya ingaruka.",
+      "Abanyeshuri barenga 700 baganiriye kuri SDG 13, SDG 15, greenhouse gases, urusobe rw'ibinyabuzima, carbon offsetting n'ibikorwa byo kugabanya ingaruka.",
     gdaTimelineDay2Title: "GS Kimisange & Gisozi I Primary School",
     gdaTimelineDay2Copy:
       "Abanyeshuri barenga 600 kuri GS Kimisange na 1,700+ kuri Gisozi I Primary School bahuje ibikorwa bya buri munsi n'inshingano zo kurengera ikirere.",
