@@ -23,10 +23,6 @@ const copy = {
     primaryActions: "Primary actions",
     heroPrimary: "Explore programs",
     heroSecondary: "Partner with us",
-    highlightedImpact: "Highlighted impact",
-    heroMetricTrees: "trees planted in one documented action day",
-    heroMetricYouth: "youth mobilized through climate education campaigns",
-    heroMetricYears: "five-year green restoration commitment",
     trustLabel: "Organization credentials",
     trustRegisteredTitle: "Registered in Rwanda",
     trustRegisteredCopy:
@@ -142,6 +138,10 @@ const copy = {
     impactHeading: "Evidence of leadership, learning, and community ownership.",
     impactIntro:
       "The council's 2025 work shows a practical operating model: identify community needs, mobilize young leaders, work with public and civil-society partners, and document measurable outcomes.",
+    impactStatsLabel: "Impact highlights",
+    impactTrees: "trees planted in one documented action day",
+    impactYouth: "youth mobilized through climate education campaigns",
+    impactYears: "five-year green restoration commitment",
     impactWetlands: "youth engaged in wetlands conservation dialogue",
     impactWorkshop: "participants in the Planting the Future workshop",
     impactStudents: "students supported with school fees and requirements",
@@ -216,10 +216,6 @@ const copy = {
     primaryActions: "Ibikorwa by'ibanze",
     heroPrimary: "Reba gahunda",
     heroSecondary: "Korana natwe",
-    highlightedImpact: "Umusaruro w'ingenzi",
-    heroMetricTrees: "ibiti byatewe ku munsi umwe wanditswe",
-    heroMetricYouth: "urubyiruko rwahujwe mu bukangurambaga bw'ikirere",
-    heroMetricYears: "imyaka itanu yo gusubiranya no kwagura ahantu h'icyatsi",
     trustLabel: "Icyizere cy'umuryango",
     trustRegisteredTitle: "Wanditswe mu Rwanda",
     trustRegisteredCopy:
@@ -337,6 +333,10 @@ const copy = {
     impactHeading: "Ibimenyetso by'ubuyobozi, kwiga n'uruhare rw'abaturage.",
     impactIntro:
       "Ibikorwa bya 2025 bigaragaza uburyo bukora: kumenya ibikenewe, guhuza abayobozi bakiri bato, gukorana n'inzego za leta n'imiryango, no kwandika ibisubizo bifite ibipimo.",
+    impactStatsLabel: "Ibipimo by'umusaruro",
+    impactTrees: "ibiti byatewe ku munsi umwe wanditswe",
+    impactYouth: "urubyiruko rwahujwe mu bukangurambaga bw'ikirere",
+    impactYears: "imyaka itanu yo gusubiranya no kwagura ahantu h'icyatsi",
     impactWetlands: "urubyiruko rwaganiriye ku kubungabunga ibishanga",
     impactWorkshop: "abitabiriye amahugurwa ya Planting the Future",
     impactStudents: "abanyeshuri bafashijwe kwishyurirwa ishuri n'ibikoresho",

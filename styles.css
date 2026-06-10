@@ -371,34 +371,6 @@ p {
   width: 100%;
 }
 
-.hero-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  max-width: 920px;
-  margin: 44px 0 0;
-  padding: 24px 0 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.32);
-}
-
-.hero-metrics div {
-  min-width: 0;
-}
-
-.hero-metrics dt {
-  margin: 0 0 5px;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-.hero-metrics dd {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.94rem;
-  line-height: 1.45;
-}
-
 .trust-band {
   background: var(--charcoal);
   color: #fff;
@@ -1161,7 +1133,6 @@ p {
     font-size: 1rem;
   }
 
-  .hero-metrics,
   .trust-grid,
   .mission-grid,
   .program-grid,
@@ -1173,11 +1144,6 @@ p {
   .contact-grid,
   .footer-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero-metrics {
-    gap: 14px;
-    margin-top: 34px;
   }
 
   .trust-grid article,
