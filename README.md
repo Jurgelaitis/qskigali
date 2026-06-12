@@ -23,10 +23,10 @@ Core communication goals:
 
 - **Bilingual interface:** English as the default language, with Kinyarwanda/Rwanda language support as a secondary option.
 - **Professional organizational layout:** Corporate-style design with restrained regional and project-related visual accents.
-- **Real project visuals:** Uses authentic photos from QS Impact Kigali Council activities in Rwanda.
+- **Real project visuals:** Uses authentic photos and video from QS Impact Kigali Council activities in Rwanda.
 - **Program filtering:** Visitors can filter programs by climate, education, and safety themes.
 - **Global Days of Action tab:** Dedicated section for the council's participation since 2024 and documented 2026 school outreach.
-- **Impact section:** Highlights measurable outcomes from documented council activities.
+- **Impact section:** Highlights top-level outcomes, including 10,000+ young students reached, 1,000+ trees planted, and 200+ youth engaged through empowerment activities.
 - **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
 - **Responsive design:** Optimized for desktop and mobile browsing.
 - **SEO and sharing metadata:** Includes canonical URL, Open Graph, Twitter card metadata, and structured organization data.
@@ -36,7 +36,7 @@ Core communication goals:
 The site currently presents four core program areas:
 
 - **1000 Trees Initiative**  
-  A 2025-2030 green restoration commitment supporting Rwanda's climate resilience and school-based environmental education.
+  A 2025-2030 green restoration commitment supporting Rwanda's climate resilience and school-based environmental education, now presented with an activity video.
 
 - **Kimisange Safe Learning & Green Community Transformation**  
   A proposed school transformation initiative focused on student safety, green learning spaces, and community-supportive facilities.
@@ -72,6 +72,7 @@ rwanda-project-site/
 └── assets/
     ├── qsi-rwanda-kigali-logo.png
     ├── hero-youth-climate-action.jpg
+    ├── 1000-trees-initiative-github.mp4
     ├── tree-planting-students.jpg
     ├── green-school-assembly.jpg
     ├── sdg-champions-session.jpg
@@ -83,8 +84,11 @@ rwanda-project-site/
     ├── gda-2026-rwankuba.jpg
     ├── gda-2026-gisozi.jpg
     ├── gda-2026-kimihurura.jpg
-    └── gda-2026-rugote.jpg
+    ├── gda-2026-rugote.jpg
+    └── nduba-playground-restoration.jpg
 ```
+
+Note: `1000-trees-initiative-github.mp4` is a lightweight web clip, approximately 22 MB, kept below the 25 MB upload limit shown in the sharing feedback. For faster production loading, a dedicated video platform or a more compressed encoder export is still recommended.
 
 ## Local Preview
 

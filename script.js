@@ -62,11 +62,12 @@ const copy = {
     filterEducation: "Education",
     filterSafety: "Safety",
     programTreesAlt: "QS Impact leaders and students planting a tree at Kimisange Secondary School",
+    programTreesVideoLabel: "1000 Trees Initiative activity video",
     programTreesLabel: "2025-2030 flagship",
     programTreesTitle: "1000 Trees Initiative",
     programTreesCopy:
       "A five-year restoration commitment supporting Rwanda's green growth agenda through school-based tree planting, student environmental clubs, and climate education.",
-    programTreesPoint1: "750+ trees planted on 21 November 2025.",
+    programTreesPoint1: "1,000+ trees planted under the 2025-2030 program.",
     programTreesPoint2: "Fruit trees, agroforestry species, and native varieties.",
     programTreesPoint3: "Ongoing care through school clubs and volunteers.",
     programKimisangeAlt: "Students holding seedlings during a green school activity",
@@ -85,7 +86,7 @@ const copy = {
     programSdgPoint1: "Launched with 60 Senior 5 and Senior 6 students.",
     programSdgPoint2: "Supports plastic-free campaigns and awareness clubs.",
     programSdgPoint3: "Designed to grow a network of SDG youth ambassadors.",
-    programPlaygroundAlt: "Community project team in Rwanda",
+    programPlaygroundAlt: "Open field in Rwanda identified for Nduba playground restoration work",
     programPlaygroundLabel: "6-month micro-restoration",
     programPlaygroundTitle: "Nduba Playground Restoration",
     programPlaygroundCopy:
@@ -139,9 +140,9 @@ const copy = {
     impactIntro:
       "The council's 2025 work shows a practical operating model: identify community needs, mobilize young leaders, work with public and civil-society partners, and document measurable outcomes.",
     impactStatsLabel: "Impact highlights",
-    impactTrees: "trees planted in one documented action day",
-    impactYouth: "youth mobilized through climate education campaigns",
-    impactYears: "five-year green restoration commitment",
+    impactStudentsReached: "young students reached through climate education sessions since 2025",
+    impactTrees: "trees planted under the 1000 Trees Planting five-year program (2025-2030)",
+    impactEmpowerment: "youth trained and engaged in sustainability, leadership, and climate action",
     impactWetlands: "youth engaged in wetlands conservation dialogue",
     impactWorkshop: "participants in the Planting the Future workshop",
     impactStudents: "students supported with school fees and requirements",
@@ -257,11 +258,12 @@ const copy = {
     filterEducation: "Uburezi",
     filterSafety: "Umutekano",
     programTreesAlt: "Abayobozi ba QS Impact n'abanyeshuri batera igiti kuri Kimisange Secondary School",
+    programTreesVideoLabel: "Video y'ibikorwa bya 1000 Trees Initiative",
     programTreesLabel: "Gahunda nkuru ya 2025-2030",
     programTreesTitle: "1000 Trees Initiative",
     programTreesCopy:
       "Umuhigo w'imyaka itanu wo gusubiranya ahantu h'icyatsi, ushyigikira icyerekezo cy'u Rwanda rwatsi binyuze mu gutera ibiti ku mashuri, clubs z'ibidukikije n'uburezi bw'ikirere.",
-    programTreesPoint1: "Ibiti 750+ byatewe ku wa 21 Ugushyingo 2025.",
+    programTreesPoint1: "Ibiti 1,000+ byatewe muri gahunda ya 2025-2030.",
     programTreesPoint2: "Harimo ibiti by'imbuto, agroforestry n'ibiti kavukire.",
     programTreesPoint3: "Kwita ku biti bikomeza binyuze muri clubs z'amashuri n'abakorerabushake.",
     programKimisangeAlt: "Abanyeshuri bafashe ingemwe mu gikorwa cya green school",
@@ -280,7 +282,7 @@ const copy = {
     programSdgPoint1: "Yatangiranye n'abanyeshuri 60 bo muri Senior 5 na Senior 6.",
     programSdgPoint2: "Ishyigikira ubukangurambaga bwo kugabanya plastiki n'amatsinda y'ubukangurambaga.",
     programSdgPoint3: "Yateguwe kugira ngo yubake urusobe rw'abahagarariye SDGs mu rubyiruko.",
-    programPlaygroundAlt: "Ikipe y'umushinga w'abaturage mu Rwanda",
+    programPlaygroundAlt: "Ahantu hafunguye mu Rwanda hatoranyijwe ku mushinga wo gusana ikibuga cya Nduba",
     programPlaygroundLabel: "Micro-restoration y'amezi 6",
     programPlaygroundTitle: "Nduba Playground Restoration",
     programPlaygroundCopy:
@@ -334,9 +336,9 @@ const copy = {
     impactIntro:
       "Ibikorwa bya 2025 bigaragaza uburyo bukora: kumenya ibikenewe, guhuza abayobozi bakiri bato, gukorana n'inzego za leta n'imiryango, no kwandika ibisubizo bifite ibipimo.",
     impactStatsLabel: "Ibipimo by'umusaruro",
-    impactTrees: "ibiti byatewe ku munsi umwe wanditswe",
-    impactYouth: "urubyiruko rwahujwe mu bukangurambaga bw'ikirere",
-    impactYears: "imyaka itanu yo gusubiranya no kwagura ahantu h'icyatsi",
+    impactStudentsReached: "abanyeshuri bakiri bato bagezweho mu biganiro by'uburezi ku kirere kuva mu 2025",
+    impactTrees: "ibiti byatewe muri gahunda y'imyaka itanu ya 1000 Trees Planting (2025-2030)",
+    impactEmpowerment: "urubyiruko rwahuguwe kandi rwitabira ibikorwa by'iterambere rirambye, ubuyobozi no kurengera ikirere",
     impactWetlands: "urubyiruko rwaganiriye ku kubungabunga ibishanga",
     impactWorkshop: "abitabiriye amahugurwa ya Planting the Future",
     impactStudents: "abanyeshuri bafashijwe kwishyurirwa ishuri n'ibikoresho",
@@ -594,7 +596,7 @@ function initMetricReveal() {
         const tick = (now) => {
           const progress = Math.min((now - start) / duration, 1);
           const value = Math.round(target * progress);
-          element.textContent = `${value}${suffix}`;
+          element.textContent = `${value.toLocaleString("en-US")}${suffix}`;
           if (progress < 1) requestAnimationFrame(tick);
         };
 
