@@ -217,6 +217,7 @@ const copy = {
     bankCurrencyLabel: "Currency",
     bankSwiftLabel: "SWIFT code",
     bankAddressLabel: "Bank address",
+    bankPhoneLabel: "Telephone",
     bankDetailsNote:
       "Please include the supported initiative in the transfer reference and notify the council through the inquiry form.",
     formLabel: "Partnership inquiry",
@@ -463,6 +464,7 @@ const copy = {
     bankCurrencyLabel: "Ifaranga",
     bankSwiftLabel: "Kode ya SWIFT",
     bankAddressLabel: "Aderesi ya banki",
+    bankPhoneLabel: "Telefoni",
     bankDetailsNote:
       "Nyamuneka shyiramo igikorwa ushyigikiye muri reference yo kohereza amafaranga kandi umenyeshe inama ukoresheje fomu y'ubusabe.",
     formLabel: "Ubusabe bw'ubufatanye",

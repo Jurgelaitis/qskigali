@@ -158,6 +158,7 @@ The Partners section includes public bank transfer details for supporters:
 - Currency: `EUR`
 - SWIFT: `IMRWRWRWXXX`
 - Bank address: `Kigali, Rwanda`
+- Telephone: `+250 788 957 212`
 
 The online card payment area is prepared as a professional website entry point, but it does not collect card details. A secure bank-hosted payment link or merchant gateway from the bank should be connected before enabling live Visa/card payments.
 
