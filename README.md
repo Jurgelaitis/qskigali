@@ -28,6 +28,7 @@ Core communication goals:
 - **Global Days of Action tab:** Dedicated section for the council's participation since 2024 and documented 2026 school outreach.
 - **Impact section:** Highlights top-level outcomes, including 10,000+ young students reached, 1,000+ trees planted, and 200+ youth engaged through empowerment activities.
 - **Student sponsorship pathway:** Presents school-fee support for vulnerable high school students as a clear program and partnership opportunity.
+- **Donation and sponsorship table:** Lists priority support areas, bank transfer details, and a clear path for payment guidance.
 - **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
 - **Responsive design:** Optimized for desktop and mobile browsing.
 - **SEO and sharing metadata:** Includes canonical URL, Open Graph, Twitter card metadata, and structured organization data.
@@ -146,6 +147,19 @@ The current Web3Forms access key is already included in `index.html`:
 ```
 
 Before public launch, submit one test inquiry and confirm that it arrives in the inbox connected to this Web3Forms key.
+
+## Donation and Payment Notes
+
+The Partners section includes public bank transfer details for supporters:
+
+- Account name: `QS IMPACT KIGALI COUNCIL LTD`
+- Bank: `I&M Bank Rwanda`
+- Account number: `20107837003`
+- Currency: `EUR`
+- SWIFT: `IMRWRWRWXXX`
+- Bank address: `Kigali, Rwanda`
+
+The online card payment area is prepared as a professional website entry point, but it does not collect card details. A secure bank-hosted payment link or merchant gateway from the bank should be connected before enabling live Visa/card payments.
 
 ## Content Notes
 

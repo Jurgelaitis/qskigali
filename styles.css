@@ -465,7 +465,9 @@ p {
 .impact-stats article,
 .timeline article,
 .partner-pathway article,
-.partner-form {
+.partner-form,
+.support-table-card,
+.payment-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
@@ -960,6 +962,153 @@ p {
   opacity: 0.78;
 }
 
+.support-panel {
+  margin-top: 42px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+
+.support-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.65fr);
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.support-heading .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+  color: var(--clay);
+}
+
+.support-heading h3 {
+  margin: 0;
+  font-size: clamp(1.55rem, 2.6vw, 2.35rem);
+  line-height: 1.08;
+}
+
+.support-heading p:last-child {
+  margin: 0;
+  color: var(--muted);
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(330px, 0.65fr);
+  gap: 20px;
+  align-items: start;
+  min-width: 0;
+}
+
+.support-table-card,
+.payment-card {
+  min-width: 0;
+  padding: 24px;
+}
+
+.support-table-card h4,
+.payment-card h4 {
+  margin: 0 0 18px;
+  font-size: 1.08rem;
+}
+
+.table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.support-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+
+.support-table th,
+.support-table td {
+  padding: 15px 16px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.support-table th {
+  background: var(--surface-soft);
+  color: #34443e;
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.support-table td {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.support-table td:first-child {
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.support-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.payment-stack {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+
+.online-payment-card {
+  background: var(--forest);
+  color: #fff;
+}
+
+.online-payment-card .label,
+.online-payment-card p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.online-payment-card h4 {
+  color: #fff;
+}
+
+.bank-details {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 16px;
+}
+
+.bank-details div {
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.bank-details div:last-child {
+  border-bottom: 0;
+}
+
+.bank-details dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.bank-details dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
 .contact-band {
   padding: 58px 0;
   background: var(--forest);
@@ -1051,6 +1200,8 @@ p {
 
   .program-card.feature,
   .gda-feature,
+  .support-heading,
+  .support-grid,
   .split-layout,
   .split-layout.reverse {
     grid-template-columns: 1fr;
@@ -1250,7 +1401,14 @@ p {
   .gda-timeline article,
   .gda-gallery div,
   .partner-pathway article,
-  .partner-form {
+  .partner-form,
+  .support-table-card,
+  .payment-card {
     padding: 20px;
+  }
+
+  .bank-details div {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 }
