@@ -27,13 +27,14 @@ Core communication goals:
 - **Program filtering:** Visitors can filter programs by climate, education, and safety themes.
 - **Global Days of Action tab:** Dedicated section for the council's participation since 2024 and documented 2026 school outreach.
 - **Impact section:** Highlights top-level outcomes, including 10,000+ young students reached, 1,000+ trees planted, and 200+ youth engaged through empowerment activities.
+- **Student sponsorship pathway:** Presents school-fee support for vulnerable high school students as a clear program and partnership opportunity.
 - **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
 - **Responsive design:** Optimized for desktop and mobile browsing.
 - **SEO and sharing metadata:** Includes canonical URL, Open Graph, Twitter card metadata, and structured organization data.
 
 ## Highlighted Programs
 
-The site currently presents four core program areas:
+The site currently presents six core program areas:
 
 - **1000 Trees Initiative**  
   A 2025-2030 green restoration commitment supporting Rwanda's climate resilience and school-based environmental education, now presented with an activity video.
@@ -43,6 +44,9 @@ The site currently presents four core program areas:
 
 - **SDG Champions Program**  
   A school-based leadership and sustainability education program for secondary students.
+
+- **School Fees Sponsorship**  
+  A focused support initiative for vulnerable high school students, targeting 50 supported students by 2030. Five students are already supported, with five more planned for the 2026-2027 academic year. Support continues until graduation.
 
 - **Global Days of Action**  
   A recurring climate education and youth action platform the council has participated in since 2024. The 2026 documentation now highlights six school communities and 3,950+ learners documented in available reports through sessions on climate change, carbon offsetting, biodiversity, waste management, tree planting, and youth leadership.
@@ -76,6 +80,7 @@ rwanda-project-site/
     ├── tree-planting-students.jpg
     ├── green-school-assembly.jpg
     ├── sdg-champions-session.jpg
+    ├── student-sponsorship-support.jpg
     ├── community-project-team.jpg
     ├── wetlands-youth-engagement.jpg
     ├── council-school-collaboration.jpg
