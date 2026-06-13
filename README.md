@@ -28,7 +28,7 @@ Core communication goals:
 - **Global Days of Action tab:** Dedicated section for the council's participation since 2024 and documented 2026 school outreach.
 - **Impact section:** Highlights top-level outcomes, including 10,000+ young students reached, 1,000+ trees planted, and 200+ youth engaged through empowerment activities.
 - **Student sponsorship pathway:** Presents school-fee support for vulnerable high school students as a clear program and partnership opportunity.
-- **Donation and sponsorship table:** Lists priority support areas, bank transfer details, and a clear path for payment guidance.
+- **Donation and sponsorship table:** Lists priority support areas and routes supporters to verified payment guidance without publishing bank account details.
 - **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
 - **Responsive design:** Optimized for desktop and mobile browsing.
 - **SEO and sharing metadata:** Includes canonical URL, Open Graph, Twitter card metadata, and structured organization data.
@@ -150,17 +150,9 @@ Before public launch, submit one test inquiry and confirm that it arrives in the
 
 ## Donation and Payment Notes
 
-The Partners section includes public bank transfer details for supporters:
+The Partners section does not publish bank account details directly. Supporters can request bank transfer instructions through the partnership form, allowing the council to verify the request, confirm the supported initiative, and share the correct transfer details directly.
 
-- Account name: `QS IMPACT KIGALI COUNCIL LTD`
-- Bank: `I&M Bank Rwanda`
-- Account number: `20107837003`
-- Currency: `EUR`
-- SWIFT: `IMRWRWRWXXX`
-- Bank address: `Kigali, Rwanda`
-- Telephone: `+250 788 957 212`
-
-The online card payment area is prepared as a professional website entry point, but it does not collect card details. A secure bank-hosted payment link or merchant gateway from the bank should be connected before enabling live Visa/card payments.
+The online card payment area is prepared as a professional website entry point, but it does not collect card details. A secure bank-hosted payment link or approved payment-provider checkout should be connected before enabling live Visa/card payments.
 
 ## Content Notes
 

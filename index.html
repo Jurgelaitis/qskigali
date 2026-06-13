@@ -590,6 +590,7 @@
                 <option value="School Fees Sponsorship" data-i18n="interestSponsorship">School Fees Sponsorship</option>
                 <option value="Playground Restoration" data-i18n="interestPlayground">Playground Restoration</option>
                 <option value="Donation / sponsorship support" data-i18n="interestDonation">Donation / sponsorship support</option>
+                <option value="Bank transfer details request" data-i18n="interestBankTransfer">Bank transfer details request</option>
                 <option value="General partnership" data-i18n="interestGeneral">General partnership</option>
               </select>
             </label>
@@ -618,7 +619,7 @@
             <h3 id="support-title" data-i18n="supportHeading">Sponsor or donate to a priority area.</h3>
             <p data-i18n="supportIntro">
               Supporters can contribute to a specific initiative, sponsor students, or make a general contribution.
-              Bank transfers can be made directly using the details below.
+              Payment details are shared through a verified follow-up instead of being posted publicly.
             </p>
           </div>
 
@@ -670,48 +671,33 @@
                 <p class="label" data-i18n="onlinePaymentLabel">Online payment</p>
                 <h4 data-i18n="onlinePaymentTitle">Visa and card payments</h4>
                 <p data-i18n="onlinePaymentCopy">
-                  This website can connect a secure bank-hosted card payment link once it is issued by the bank. No card
-                  details are collected on this website.
+                  Visa and card payments should be handled only through a secure bank-hosted payment link or approved
+                  payment provider checkout. No card details are collected on this website.
                 </p>
-                <a class="button secondary full" href="#partnerForm" data-i18n="onlinePaymentCta">Request payment guidance</a>
+                <a
+                  class="button secondary full"
+                  href="#partnerForm"
+                  data-interest-target="Donation / sponsorship support"
+                  data-i18n="onlinePaymentCta"
+                >Request payment guidance</a>
               </article>
 
-              <article class="payment-card bank-details-card">
+              <article class="payment-card bank-request-card">
                 <p class="label" data-i18n="bankDetailsLabel">Bank transfer</p>
-                <h4 data-i18n="bankDetailsTitle">Direct transfer details</h4>
-                <dl class="bank-details">
-                  <div>
-                    <dt data-i18n="bankAccountNameLabel">Account name</dt>
-                    <dd>QS IMPACT KIGALI COUNCIL LTD</dd>
-                  </div>
-                  <div>
-                    <dt data-i18n="bankNameLabel">Bank name</dt>
-                    <dd>I&amp;M Bank Rwanda</dd>
-                  </div>
-                  <div>
-                    <dt data-i18n="bankAccountNumberLabel">Account number</dt>
-                    <dd>20107837003</dd>
-                  </div>
-                  <div>
-                    <dt data-i18n="bankCurrencyLabel">Currency</dt>
-                    <dd>EUR</dd>
-                  </div>
-                  <div>
-                    <dt data-i18n="bankSwiftLabel">SWIFT code</dt>
-                    <dd>IMRWRWRWXXX</dd>
-                  </div>
-                  <div>
-                    <dt data-i18n="bankAddressLabel">Bank address</dt>
-                    <dd>Kigali, Rwanda</dd>
-                  </div>
-                  <div>
-                    <dt data-i18n="bankPhoneLabel">Telephone</dt>
-                    <dd><a href="tel:+250788957212">+250 788 957 212</a></dd>
-                  </div>
-                </dl>
+                <h4 data-i18n="bankDetailsTitle">Bank transfer by request</h4>
+                <p data-i18n="bankDetailsCopy">
+                  To reduce public exposure of bank details, transfer information is shared after a supporter submits a
+                  request through the partnership form.
+                </p>
+                <a
+                  class="button primary full"
+                  href="#partnerForm"
+                  data-interest-target="Bank transfer details request"
+                  data-i18n="bankDetailsCta"
+                >Request transfer details</a>
                 <p class="form-note" data-i18n="bankDetailsNote">
-                  Please include the supported initiative in the transfer reference and notify the council through the
-                  inquiry form.
+                  The council can verify the request, confirm the supported initiative, and send the correct transfer
+                  instructions directly.
                 </p>
               </article>
             </div>

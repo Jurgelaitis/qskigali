@@ -184,7 +184,7 @@ const copy = {
     supportEyebrow: "Support & donations",
     supportHeading: "Sponsor or donate to a priority area.",
     supportIntro:
-      "Supporters can contribute to a specific initiative, sponsor students, or make a general contribution. Bank transfers can be made directly using the details below.",
+      "Supporters can contribute to a specific initiative, sponsor students, or make a general contribution. Payment details are shared through a verified follow-up instead of being posted publicly.",
     supportTableTitle: "Sponsorship opportunities",
     supportTableOpportunity: "Opportunity",
     supportTablePurpose: "Purpose",
@@ -207,19 +207,15 @@ const copy = {
     onlinePaymentLabel: "Online payment",
     onlinePaymentTitle: "Visa and card payments",
     onlinePaymentCopy:
-      "This website can connect a secure bank-hosted card payment link once it is issued by the bank. No card details are collected on this website.",
+      "Visa and card payments should be handled only through a secure bank-hosted payment link or approved payment provider checkout. No card details are collected on this website.",
     onlinePaymentCta: "Request payment guidance",
     bankDetailsLabel: "Bank transfer",
-    bankDetailsTitle: "Direct transfer details",
-    bankAccountNameLabel: "Account name",
-    bankNameLabel: "Bank name",
-    bankAccountNumberLabel: "Account number",
-    bankCurrencyLabel: "Currency",
-    bankSwiftLabel: "SWIFT code",
-    bankAddressLabel: "Bank address",
-    bankPhoneLabel: "Telephone",
+    bankDetailsTitle: "Bank transfer by request",
+    bankDetailsCopy:
+      "To reduce public exposure of bank details, transfer information is shared after a supporter submits a request through the partnership form.",
+    bankDetailsCta: "Request transfer details",
     bankDetailsNote:
-      "Please include the supported initiative in the transfer reference and notify the council through the inquiry form.",
+      "The council can verify the request, confirm the supported initiative, and send the correct transfer instructions directly.",
     formLabel: "Partnership inquiry",
     formName: "Name",
     formOrganization: "Organization",
@@ -232,6 +228,7 @@ const copy = {
     interestSponsorship: "School Fees Sponsorship",
     interestPlayground: "Playground Restoration",
     interestDonation: "Donation / sponsorship support",
+    interestBankTransfer: "Bank transfer details request",
     interestGeneral: "General partnership",
     formMessage: "Message",
     formMessagePlaceholder: "Briefly describe how you would like to collaborate.",
@@ -431,7 +428,7 @@ const copy = {
     supportEyebrow: "Inkunga n'impano",
     supportHeading: "Tera inkunga cyangwa utange impano ku gikorwa cy'ibanze.",
     supportIntro:
-      "Abadushyigikira bashobora gutanga inkunga ku gikorwa kihariye, gufasha abanyeshuri cyangwa gutanga inkunga rusange. Kohereza amafaranga kuri banki bishobora gukorwa hifashishijwe amakuru ari hasi.",
+      "Abadushyigikira bashobora gutanga inkunga ku gikorwa kihariye, gufasha abanyeshuri cyangwa gutanga inkunga rusange. Amakuru yo kwishyura atangwa nyuma yo kugenzura ubusabe aho gushyirwa ku rubuga ku mugaragaro.",
     supportTableTitle: "Aho inkunga ikenewe",
     supportTableOpportunity: "Amahirwe",
     supportTablePurpose: "Intego",
@@ -454,19 +451,15 @@ const copy = {
     onlinePaymentLabel: "Kwishyura online",
     onlinePaymentTitle: "Kwishyura na Visa cyangwa ikarita",
     onlinePaymentCopy:
-      "Uru rubuga rushobora guhuzwa n'umuyoboro wizewe wa banki wo kwishyura n'ikarita igihe banki izawutanga. Nta makuru y'ikarita abikwa kuri uru rubuga.",
+      "Kwishyura na Visa cyangwa ikarita bigomba gukorwa gusa binyuze ku muyoboro wizewe wa banki cyangwa payment provider yemewe. Nta makuru y'ikarita abikwa kuri uru rubuga.",
     onlinePaymentCta: "Saba ubufasha bwo kwishyura",
     bankDetailsLabel: "Kohereza kuri banki",
-    bankDetailsTitle: "Amakuru yo koherezaho amafaranga",
-    bankAccountNameLabel: "Izina rya konti",
-    bankNameLabel: "Izina rya banki",
-    bankAccountNumberLabel: "Nimero ya konti",
-    bankCurrencyLabel: "Ifaranga",
-    bankSwiftLabel: "Kode ya SWIFT",
-    bankAddressLabel: "Aderesi ya banki",
-    bankPhoneLabel: "Telefoni",
+    bankDetailsTitle: "Amakuru ya banki atangwa bisabwe",
+    bankDetailsCopy:
+      "Mu kugabanya kugaragaza amakuru ya banki ku mugaragaro, amakuru yo kohereza amafaranga atangwa nyuma y'uko uwifuza gutera inkunga yohereje ubusabe.",
+    bankDetailsCta: "Saba amakuru yo kohereza",
     bankDetailsNote:
-      "Nyamuneka shyiramo igikorwa ushyigikiye muri reference yo kohereza amafaranga kandi umenyeshe inama ukoresheje fomu y'ubusabe.",
+      "Inama ishobora kugenzura ubusabe, kwemeza igikorwa gishyigikirwa, no kohereza amabwiriza nyayo yo kwishyura mu buryo butaziguye.",
     formLabel: "Ubusabe bw'ubufatanye",
     formName: "Izina",
     formOrganization: "Ikigo",
@@ -479,6 +472,7 @@ const copy = {
     interestSponsorship: "Gufasha kwishyura amafaranga y'ishuri",
     interestPlayground: "Playground Restoration",
     interestDonation: "Inkunga / gufasha gahunda",
+    interestBankTransfer: "Gusaba amakuru yo kohereza kuri banki",
     interestGeneral: "Ubufatanye rusange",
     formMessage: "Ubutumwa",
     formMessagePlaceholder: "Andika muri make uko mwifuza gukorana.",
@@ -631,6 +625,7 @@ function initPartnerForm() {
   const statusText = status?.querySelector("p");
   const submitButton = form?.querySelector('button[type="submit"]');
   const accessKeyInput = form?.querySelector('input[name="access_key"]');
+  const interestSelect = form?.querySelector('select[name="interest"]');
 
   if (!form || !status || !statusText || !submitButton || !accessKeyInput) return;
 
@@ -639,6 +634,14 @@ function initPartnerForm() {
     statusText.textContent = getCopy(messageKey);
     status.hidden = false;
   };
+
+  document.querySelectorAll("[data-interest-target]").forEach((link) => {
+    link.addEventListener("click", () => {
+      const target = link.dataset.interestTarget;
+      if (!interestSelect || !target) return;
+      interestSelect.value = target;
+    });
+  });
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();

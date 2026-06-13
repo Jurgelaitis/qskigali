@@ -1013,6 +1013,10 @@ p {
   font-size: 1.08rem;
 }
 
+.payment-card > p:not(.label):not(.form-note) {
+  color: var(--muted);
+}
+
 .table-wrap {
   max-width: 100%;
   overflow-x: auto;
@@ -1075,6 +1079,10 @@ p {
 
 .online-payment-card h4 {
   color: #fff;
+}
+
+.bank-request-card .button {
+  margin: 18px 0 14px;
 }
 
 .bank-details {
