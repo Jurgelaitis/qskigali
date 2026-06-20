@@ -5,7 +5,7 @@ const copy = {
   en: {
     metaTitle: "QS Impact Kigali Council | Youth-Led Sustainable Development in Rwanda",
     metaDescription:
-      "QS Impact Kigali Council is a youth-led organization in Kigali, Rwanda advancing SDG-driven climate action, Global Days of Action, education, safer communities, and partnerships.",
+      "QS Impact Kigali Council is a youth-led organization in Kigali, Rwanda advancing climate action, education, student sponsorship, safer communities, partnerships, and verified donation support.",
     skipLink: "Skip to content",
     menuToggle: "Open navigation menu",
     mainNav: "Main navigation",
@@ -15,6 +15,7 @@ const copy = {
     navGlobalDays: "Global Days",
     navImpact: "Impact",
     navPartners: "Partners",
+    navSupport: "Support",
     navContact: "Contact",
     heroImageAlt: "Students and QS Impact Kigali Council leaders preparing trees for climate action in Rwanda",
     heroEyebrow: "Kigali, Rwanda | Youth-led sustainable development",
@@ -208,14 +209,58 @@ const copy = {
     onlinePaymentTitle: "Visa and card payments",
     onlinePaymentCopy:
       "Visa and card payments should be handled only through a secure bank-hosted payment link or approved payment provider checkout. No card details are collected on this website.",
-    onlinePaymentCta: "Request payment guidance",
+    onlinePaymentCta: "Prepare a card donation",
     bankDetailsLabel: "Bank transfer",
     bankDetailsTitle: "Bank transfer by request",
     bankDetailsCopy:
-      "To reduce public exposure of bank details, transfer information is shared after a supporter submits a request through the partnership form.",
-    bankDetailsCta: "Request transfer details",
+      "To reduce public exposure of bank details, transfer information is shared after a supporter submits the support request form.",
+    bankDetailsCta: "Prepare a bank transfer",
     bankDetailsNote:
       "The council can verify the request, confirm the supported initiative, and send the correct transfer instructions directly.",
+    donationRequestEyebrow: "Donation request",
+    donationRequestHeading: "Start your support request.",
+    donationRequestIntro:
+      "Tell the council how you would like to contribute. You will receive verified bank-transfer instructions, a pro forma invoice when requested, or a secure hosted card-payment link once available.",
+    donationStepOneTitle: "Choose your support",
+    donationStepOneCopy: "Select a project, frequency, intended amount, and preferred payment route.",
+    donationStepTwoTitle: "Submit your details",
+    donationStepTwoCopy: "The request is sent securely to QS Impact Kigali Council.",
+    donationStepThreeTitle: "Receive instructions",
+    donationStepThreeCopy:
+      "The council confirms the next step and provides the correct payment document or link.",
+    donationFormLabel: "Donation or sponsorship request",
+    donationFrequencyLabel: "Frequency",
+    donationFrequencyOnce: "One-time",
+    donationFrequencyMonthly: "Monthly",
+    donationAmountLabel: "Intended amount",
+    donationCurrencyLabel: "Currency",
+    donationAmountPresetsLabel: "Suggested donation amounts",
+    donationInitiativeLabel: "Initiative to support",
+    donationInitiativeClimate: "Climate Education & Global Days of Action",
+    donationInitiativeSafety: "Safe Learning & Playground Restoration",
+    donationDonorTypeLabel: "Donor type",
+    donationDonorIndividual: "Individual",
+    donationDonorCompany: "Company / organization",
+    donationMethodLabel: "Preferred payment route",
+    donationMethodBank: "Bank transfer",
+    donationMethodCard: "Card payment",
+    donationMethodGuidance: "I need guidance",
+    donationNameLabel: "Full name",
+    donationOrganizationLabel: "Company or organization (optional)",
+    donationEmailLabel: "Email",
+    donationInvoiceToggle: "I need a pro forma invoice before payment.",
+    donationInvoiceNameLabel: "Invoice name / legal entity",
+    donationInvoiceIdLabel: "Registration or tax ID (optional)",
+    donationInvoiceAddressLabel: "Invoice address",
+    donationMessageLabel: "Message (optional)",
+    donationMessagePlaceholder: "Add any details the council should know about your intended support.",
+    donationSubmit: "Request donation instructions",
+    donationSafetyNote:
+      "This form does not take payment. Never enter card numbers, CVV codes, banking passwords, or PINs here.",
+    donationSending: "Sending your support request...",
+    donationSuccess:
+      "Thank you. Your support request has been sent. The council will contact you with the next step.",
+    donationError: "The request could not be sent. Please try again or contact kigalicouncil@qsimpact.org.",
     formLabel: "Partnership inquiry",
     formName: "Name",
     formOrganization: "Organization",
@@ -227,8 +272,6 @@ const copy = {
     interestGlobalDays: "Global Days of Action",
     interestSponsorship: "School Fees Sponsorship",
     interestPlayground: "Playground Restoration",
-    interestDonation: "Donation / sponsorship support",
-    interestBankTransfer: "Bank transfer details request",
     interestGeneral: "General partnership",
     formMessage: "Message",
     formMessagePlaceholder: "Briefly describe how you would like to collaborate.",
@@ -248,7 +291,7 @@ const copy = {
   rw: {
     metaTitle: "QS Impact Kigali Council | Iterambere rirambye riyobowe n'urubyiruko mu Rwanda",
     metaDescription:
-      "QS Impact Kigali Council ni umuryango uyobowe n'urubyiruko i Kigali, ukora ku bikorwa bya SDGs, Global Days of Action, kurengera ikirere, uburezi, umutekano w'abaturage n'ubufatanye.",
+      "QS Impact Kigali Council ni umuryango uyobowe n'urubyiruko i Kigali, ukora ku kurengera ikirere, uburezi, gufasha abanyeshuri, umutekano w'abaturage, ubufatanye n'inkunga igenzuwe.",
     skipLink: "Jya ku bikubiye ku rupapuro",
     menuToggle: "Fungura menu",
     mainNav: "Imiyoborere nyamukuru",
@@ -258,6 +301,7 @@ const copy = {
     navGlobalDays: "Global Days",
     navImpact: "Umusaruro",
     navPartners: "Abafatanyabikorwa",
+    navSupport: "Inkunga",
     navContact: "Twandikire",
     heroImageAlt: "Abanyeshuri n'abayobozi ba QS Impact Kigali Council bitegura gutera ibiti mu bikorwa byo kurengera ikirere mu Rwanda",
     heroEyebrow: "Kigali, Rwanda | Iterambere rirambye riyobowe n'urubyiruko",
@@ -452,14 +496,58 @@ const copy = {
     onlinePaymentTitle: "Kwishyura na Visa cyangwa ikarita",
     onlinePaymentCopy:
       "Kwishyura na Visa cyangwa ikarita bigomba gukorwa gusa binyuze ku muyoboro wizewe wa banki cyangwa payment provider yemewe. Nta makuru y'ikarita abikwa kuri uru rubuga.",
-    onlinePaymentCta: "Saba ubufasha bwo kwishyura",
+    onlinePaymentCta: "Tegura inkunga y'ikarita",
     bankDetailsLabel: "Kohereza kuri banki",
     bankDetailsTitle: "Amakuru ya banki atangwa bisabwe",
     bankDetailsCopy:
-      "Mu kugabanya kugaragaza amakuru ya banki ku mugaragaro, amakuru yo kohereza amafaranga atangwa nyuma y'uko uwifuza gutera inkunga yohereje ubusabe.",
-    bankDetailsCta: "Saba amakuru yo kohereza",
+      "Mu kugabanya kugaragaza amakuru ya banki ku mugaragaro, amakuru yo kohereza amafaranga atangwa nyuma y'uko uwifuza gutera inkunga yohereje fomu y'ubusabe.",
+    bankDetailsCta: "Tegura kohereza kuri banki",
     bankDetailsNote:
       "Inama ishobora kugenzura ubusabe, kwemeza igikorwa gishyigikirwa, no kohereza amabwiriza nyayo yo kwishyura mu buryo butaziguye.",
+    donationRequestEyebrow: "Ubusabe bw'inkunga",
+    donationRequestHeading: "Tangira ubusabe bwawe bwo gutera inkunga.",
+    donationRequestIntro:
+      "Menyesha inama uko wifuza gutanga inkunga. Uzahabwa amabwiriza ya banki yagenzuwe, pro forma invoice igihe uyisabye, cyangwa link yizewe yo kwishyura n'ikarita igihe izaba iboneka.",
+    donationStepOneTitle: "Hitamo icyo ushyigikira",
+    donationStepOneCopy: "Hitamo umushinga, inshuro, amafaranga uteganya n'uburyo bwo kwishyura.",
+    donationStepTwoTitle: "Ohereza amakuru yawe",
+    donationStepTwoCopy: "Ubusabe bwoherezwa mu buryo butekanye kuri QS Impact Kigali Council.",
+    donationStepThreeTitle: "Habwa amabwiriza",
+    donationStepThreeCopy: "Inama yemeza intambwe ikurikira ikohereza inyandiko cyangwa link ikwiye yo kwishyura.",
+    donationFormLabel: "Ubusabe bw'impano cyangwa inkunga",
+    donationFrequencyLabel: "Inshuro",
+    donationFrequencyOnce: "Inshuro imwe",
+    donationFrequencyMonthly: "Buri kwezi",
+    donationAmountLabel: "Amafaranga uteganya",
+    donationCurrencyLabel: "Ifaranga",
+    donationAmountPresetsLabel: "Amafaranga y'icyitegererezo",
+    donationInitiativeLabel: "Igikorwa ushaka gushyigikira",
+    donationInitiativeClimate: "Uburezi ku kirere & Global Days of Action",
+    donationInitiativeSafety: "Ahantu ho kwigira hatekanye & gusana ibibuga",
+    donationDonorTypeLabel: "Ubwoko bw'utanga inkunga",
+    donationDonorIndividual: "Umuntu ku giti cye",
+    donationDonorCompany: "Ikigo / umuryango",
+    donationMethodLabel: "Uburyo bwo kwishyura wifuza",
+    donationMethodBank: "Kohereza kuri banki",
+    donationMethodCard: "Kwishyura n'ikarita",
+    donationMethodGuidance: "Nkeneye ubufasha",
+    donationNameLabel: "Amazina yose",
+    donationOrganizationLabel: "Ikigo cyangwa umuryango (si ngombwa)",
+    donationEmailLabel: "Email",
+    donationInvoiceToggle: "Nkeneye pro forma invoice mbere yo kwishyura.",
+    donationInvoiceNameLabel: "Izina rishyirwa kuri invoice / izina ryemewe ry'ikigo",
+    donationInvoiceIdLabel: "Nimero y'iyandikwa cyangwa y'umusoro (si ngombwa)",
+    donationInvoiceAddressLabel: "Aderesi ya invoice",
+    donationMessageLabel: "Ubutumwa (si ngombwa)",
+    donationMessagePlaceholder: "Andika andi makuru inama ikwiye kumenya ku nkunga uteganya.",
+    donationSubmit: "Saba amabwiriza yo gutanga inkunga",
+    donationSafetyNote:
+      "Iyi fomu ntabwo yakira amafaranga. Ntukandikemo nimero z'ikarita, CVV, passwords za banki cyangwa PIN.",
+    donationSending: "Ubusabe bw'inkunga burimo koherezwa...",
+    donationSuccess:
+      "Murakoze. Ubusabe bw'inkunga bwoherejwe. Inama izakwandikira ikumenyeshe intambwe ikurikira.",
+    donationError:
+      "Ubusabe ntibwashoboye koherezwa. Ongera ugerageze cyangwa wandikire kigalicouncil@qsimpact.org.",
     formLabel: "Ubusabe bw'ubufatanye",
     formName: "Izina",
     formOrganization: "Ikigo",
@@ -471,8 +559,6 @@ const copy = {
     interestGlobalDays: "Global Days of Action",
     interestSponsorship: "Gufasha kwishyura amafaranga y'ishuri",
     interestPlayground: "Playground Restoration",
-    interestDonation: "Inkunga / gufasha gahunda",
-    interestBankTransfer: "Gusaba amakuru yo kohereza kuri banki",
     interestGeneral: "Ubufatanye rusange",
     formMessage: "Ubutumwa",
     formMessagePlaceholder: "Andika muri make uko mwifuza gukorana.",
@@ -619,29 +705,20 @@ function initProgramFilters() {
   });
 }
 
-function initPartnerForm() {
-  const form = document.getElementById("partnerForm");
-  const status = document.getElementById("formStatus");
+function initWeb3Form({ formId, statusId, sendingKey, successKey, errorKey }) {
+  const form = document.getElementById(formId);
+  const status = document.getElementById(statusId);
   const statusText = status?.querySelector("p");
   const submitButton = form?.querySelector('button[type="submit"]');
   const accessKeyInput = form?.querySelector('input[name="access_key"]');
-  const interestSelect = form?.querySelector('select[name="interest"]');
 
-  if (!form || !status || !statusText || !submitButton || !accessKeyInput) return;
+  if (!form || !status || !statusText || !submitButton || !accessKeyInput) return null;
 
   const setFormStatus = (type, messageKey) => {
     status.dataset.status = type;
     statusText.textContent = getCopy(messageKey);
     status.hidden = false;
   };
-
-  document.querySelectorAll("[data-interest-target]").forEach((link) => {
-    link.addEventListener("click", () => {
-      const target = link.dataset.interestTarget;
-      if (!interestSelect || !target) return;
-      interestSelect.value = target;
-    });
-  });
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -652,7 +729,7 @@ function initPartnerForm() {
       return;
     }
 
-    setFormStatus("loading", "formSending");
+    setFormStatus("loading", sendingKey);
     submitButton.disabled = true;
 
     try {
@@ -675,14 +752,82 @@ function initPartnerForm() {
 
       form.reset();
       accessKeyInput.value = accessKey;
-      setFormStatus("success", "formSuccess");
+      setFormStatus("success", successKey);
       submitButton.disabled = false;
     } catch (error) {
       console.error(error);
-      setFormStatus("error", "formError");
+      setFormStatus("error", errorKey);
       submitButton.disabled = false;
     }
   });
+
+  return form;
+}
+
+function initForms() {
+  initWeb3Form({
+    formId: "partnerForm",
+    statusId: "formStatus",
+    sendingKey: "formSending",
+    successKey: "formSuccess",
+    errorKey: "formError",
+  });
+  const donationForm = initWeb3Form({
+    formId: "donationForm",
+    statusId: "donationFormStatus",
+    sendingKey: "donationSending",
+    successKey: "donationSuccess",
+    errorKey: "donationError",
+  });
+
+  if (!donationForm) return;
+
+  const methodSelect = donationForm.querySelector('select[name="payment_method"]');
+  document.querySelectorAll("[data-donation-method-target]").forEach((link) => {
+    link.addEventListener("click", () => {
+      const target = link.dataset.donationMethodTarget;
+      if (!methodSelect || !target) return;
+      methodSelect.value = target;
+    });
+  });
+
+  const amountInput = donationForm.querySelector('input[name="amount"]');
+  const amountButtons = donationForm.querySelectorAll("[data-donation-amount]");
+  const syncAmountButtons = () => {
+    amountButtons.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.donationAmount === amountInput?.value));
+    });
+  };
+
+  amountButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!amountInput) return;
+      amountInput.value = button.dataset.donationAmount || "";
+      syncAmountButtons();
+      amountInput.focus();
+    });
+  });
+  amountInput?.addEventListener("input", syncAmountButtons);
+
+  const invoiceToggle = donationForm.querySelector("[data-invoice-toggle]");
+  const invoiceFields = donationForm.querySelector("[data-invoice-fields]");
+  const invoiceName = donationForm.querySelector('input[name="invoice_name"]');
+  const invoiceAddress = donationForm.querySelector('textarea[name="invoice_address"]');
+  const syncInvoiceFields = () => {
+    const isRequested = Boolean(invoiceToggle?.checked);
+    if (invoiceFields) invoiceFields.hidden = !isRequested;
+    if (invoiceName) invoiceName.required = isRequested;
+    if (invoiceAddress) invoiceAddress.required = isRequested;
+  };
+
+  invoiceToggle?.addEventListener("change", syncInvoiceFields);
+  donationForm.addEventListener("reset", () => {
+    requestAnimationFrame(() => {
+      syncAmountButtons();
+      syncInvoiceFields();
+    });
+  });
+  syncInvoiceFields();
 }
 
 function initMetricReveal() {
@@ -720,5 +865,5 @@ function initMetricReveal() {
 initLanguage();
 initNavigation();
 initProgramFilters();
-initPartnerForm();
+initForms();
 initMetricReveal();

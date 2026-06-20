@@ -423,6 +423,10 @@ p {
   background: var(--surface);
 }
 
+.support-section {
+  background: var(--paper);
+}
+
 .section-heading {
   max-width: 820px;
 }
@@ -466,6 +470,7 @@ p {
 .timeline article,
 .partner-pathway article,
 .partner-form,
+.donation-form,
 .support-table-card,
 .payment-card {
   border: 1px solid var(--line);
@@ -884,7 +889,8 @@ p {
   font-size: 0.94rem;
 }
 
-.partner-form {
+.partner-form,
+.donation-form {
   display: grid;
   gap: 14px;
   padding: 24px;
@@ -899,20 +905,20 @@ p {
   pointer-events: none;
 }
 
-.partner-form label {
+:is(.partner-form, .donation-form) label {
   display: grid;
   gap: 7px;
 }
 
-.partner-form label span {
+:is(.partner-form, .donation-form) label > span {
   color: #34443e;
   font-size: 0.86rem;
   font-weight: 850;
 }
 
-.partner-form input,
-.partner-form select,
-.partner-form textarea {
+:is(.partner-form, .donation-form) input,
+:is(.partner-form, .donation-form) select,
+:is(.partner-form, .donation-form) textarea {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -920,13 +926,13 @@ p {
   color: var(--ink);
 }
 
-.partner-form input,
-.partner-form select {
+:is(.partner-form, .donation-form) input,
+:is(.partner-form, .donation-form) select {
   min-height: 44px;
   padding: 0 12px;
 }
 
-.partner-form textarea {
+:is(.partner-form, .donation-form) textarea {
   resize: vertical;
   min-height: 112px;
   padding: 12px;
@@ -957,15 +963,13 @@ p {
   background: rgba(152, 95, 61, 0.1);
 }
 
-.partner-form .button:disabled {
+:is(.partner-form, .donation-form) .button:disabled {
   cursor: wait;
   opacity: 0.78;
 }
 
 .support-panel {
-  margin-top: 42px;
-  padding-top: 36px;
-  border-top: 1px solid var(--line);
+  margin-top: 0;
 }
 
 .support-heading {
@@ -1083,6 +1087,211 @@ p {
 
 .bank-request-card .button {
   margin: 18px 0 14px;
+}
+
+.donation-request-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
+  gap: 28px;
+  align-items: start;
+  margin-top: 38px;
+  padding-top: 38px;
+  border-top: 1px solid var(--line);
+}
+
+.donation-request-copy {
+  position: sticky;
+  top: 98px;
+}
+
+.donation-request-copy .eyebrow {
+  color: var(--clay);
+}
+
+.donation-request-copy > p:last-of-type {
+  color: var(--muted);
+}
+
+.donation-request-copy h3 {
+  max-width: 520px;
+  margin: 0 0 18px;
+  font-size: clamp(1.65rem, 2.8vw, 2.5rem);
+  line-height: 1.08;
+}
+
+.donation-steps {
+  display: grid;
+  gap: 0;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.donation-steps li {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+
+.donation-steps li > span {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(23, 79, 59, 0.1);
+  color: var(--forest);
+  font-weight: 900;
+}
+
+.donation-steps h4 {
+  margin: 2px 0 5px;
+  font-size: 0.98rem;
+}
+
+.donation-steps p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.donation-form {
+  min-width: 0;
+  padding: 28px;
+}
+
+.donation-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.donation-fieldset legend {
+  margin-bottom: 8px;
+  color: #34443e;
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.donation-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.donation-form .choice-option {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.donation-form .choice-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  min-height: 0;
+  opacity: 0;
+}
+
+.donation-form .choice-option span {
+  display: grid;
+  min-height: 44px;
+  padding: 10px 14px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfa;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.donation-form .choice-option input:checked + span {
+  border-color: var(--forest);
+  background: var(--forest);
+  color: #fff;
+}
+
+.donation-form .choice-option input:focus-visible + span {
+  outline: 3px solid rgba(225, 154, 21, 0.55);
+  outline-offset: 3px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.amount-row {
+  grid-template-columns: minmax(0, 1fr) 140px;
+}
+
+.amount-presets {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.amount-presets button {
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  color: var(--forest);
+  font-weight: 900;
+}
+
+.amount-presets button[aria-pressed="true"] {
+  border-color: var(--forest);
+  background: var(--forest);
+  color: #fff;
+}
+
+.donation-form .checkbox-line {
+  grid-template-columns: 20px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  cursor: pointer;
+}
+
+.donation-form .checkbox-line input {
+  width: 18px;
+  height: 18px;
+  min-height: 0;
+  margin: 1px 0 0;
+  padding: 0;
+  accent-color: var(--forest);
+}
+
+.invoice-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+}
+
+.invoice-fields[hidden] {
+  display: none;
+}
+
+.invoice-fields label:last-child {
+  grid-column: 1 / -1;
+}
+
+.form-safety-note {
+  padding: 12px 14px;
+  border-left: 3px solid var(--gold);
+  background: rgba(225, 154, 21, 0.09);
 }
 
 .bank-details {
@@ -1210,9 +1419,14 @@ p {
   .gda-feature,
   .support-heading,
   .support-grid,
+  .donation-request-layout,
   .split-layout,
   .split-layout.reverse {
     grid-template-columns: 1fr;
+  }
+
+  .donation-request-copy {
+    position: static;
   }
 
   .program-card.feature img,
@@ -1410,9 +1624,23 @@ p {
   .gda-gallery div,
   .partner-pathway article,
   .partner-form,
+  .donation-form,
   .support-table-card,
   .payment-card {
     padding: 20px;
+  }
+
+  .form-row,
+  .invoice-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .amount-row {
+    grid-template-columns: minmax(0, 1fr) 110px;
+  }
+
+  .invoice-fields label:last-child {
+    grid-column: auto;
   }
 
   .bank-details div {

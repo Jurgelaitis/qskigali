@@ -28,7 +28,8 @@ Core communication goals:
 - **Global Days of Action tab:** Dedicated section for the council's participation since 2024 and documented 2026 school outreach.
 - **Impact section:** Highlights top-level outcomes, including 10,000+ young students reached, 1,000+ trees planted, and 200+ youth engaged through empowerment activities.
 - **Student sponsorship pathway:** Presents school-fee support for vulnerable high school students as a clear program and partnership opportunity.
-- **Donation and sponsorship table:** Lists priority support areas and routes supporters to verified payment guidance without publishing bank account details.
+- **Dedicated Support tab:** Presents sponsorship priorities and a clear donation-request workflow without publishing bank account details.
+- **Donation and invoice request form:** Captures one-time or monthly support intent, amount, currency, initiative, donor type, preferred payment route, and optional pro forma invoice information.
 - **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
 - **Responsive design:** Optimized for desktop and mobile browsing.
 - **SEO and sharing metadata:** Includes canonical URL, Open Graph, Twitter card metadata, and structured organization data.
@@ -61,7 +62,7 @@ This is a static website built with:
 
 - `index.html` for structure and content
 - `styles.css` for responsive visual design
-- `script.js` for language switching, navigation behavior, program filtering, metric animation, and Web3Forms partnership inquiry submission
+- `script.js` for language switching, navigation behavior, program filtering, metric animation, donation controls, and Web3Forms submissions
 - Local image assets in the `assets/` folder
 
 No build system, package manager, backend, or database is required.
@@ -132,9 +133,9 @@ Recommended production domain setup:
 - Primary: `https://www.qskigali.org/`
 - Redirect: `https://qskigali.org/` to `https://www.qskigali.org/`
 
-## Partnership Form Setup
+## Form Setup
 
-The partnership form is configured for Web3Forms and posts submissions to:
+The partnership and donation-request forms are configured for Web3Forms and post submissions to:
 
 ```text
 https://api.web3forms.com/submit
@@ -146,13 +147,13 @@ The current Web3Forms access key is already included in `index.html`:
 <input type="hidden" name="access_key" value="0c1c963b-fa57-43c3-970d-b88466e59a18" />
 ```
 
-Before public launch, submit one test inquiry and confirm that it arrives in the inbox connected to this Web3Forms key.
+Before public launch, submit one test partnership inquiry and one donation request, then confirm that both arrive in the inbox connected to this Web3Forms key.
 
 ## Donation and Payment Notes
 
-The Partners section does not publish bank account details directly. Supporters can request bank transfer instructions through the partnership form, allowing the council to verify the request, confirm the supported initiative, and share the correct transfer details directly.
+The Support section does not publish bank account details directly. Supporters can submit a structured request that records their intended amount, currency, initiative, donor type, payment preference, and whether a pro forma invoice is required. The council can then verify the request and share the correct transfer instructions directly.
 
-The online card payment area is prepared as a professional website entry point, but it does not collect card details. A secure bank-hosted payment link or approved payment-provider checkout should be connected before enabling live Visa/card payments.
+The website does not collect card details. Live Visa/card payments must use a secure bank-hosted payment link or an approved hosted payment-provider checkout. When a provider URL is issued, the card-payment call to action can be connected directly to that hosted checkout.
 
 ## Content Notes
 

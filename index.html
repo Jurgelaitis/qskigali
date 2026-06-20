@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="QS Impact Kigali Council is a youth-led organization in Kigali, Rwanda advancing SDG-driven climate action, Global Days of Action, education, student sponsorship, safer communities, and partnerships."
+      content="QS Impact Kigali Council is a youth-led organization in Kigali, Rwanda advancing climate action, education, student sponsorship, safer communities, partnerships, and verified donation support."
     />
     <title>QS Impact Kigali Council | Youth-Led Sustainable Development in Rwanda</title>
     <link rel="canonical" href="https://www.qskigali.org/" />
@@ -14,14 +14,14 @@
     <meta property="og:title" content="QS Impact Kigali Council | Youth-Led Sustainable Development in Rwanda" />
     <meta
       property="og:description"
-      content="Youth-led climate action, Global Days of Action, education, student sponsorship, safer communities, and SDG-driven partnerships in Rwanda."
+      content="Youth-led climate action, education, student sponsorship, safer communities, partnerships, and verified donation support in Rwanda."
     />
     <meta property="og:image" content="https://www.qskigali.org/assets/hero-youth-climate-action.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="QS Impact Kigali Council | Youth-Led Sustainable Development in Rwanda" />
     <meta
       name="twitter:description"
-      content="Youth-led climate action, Global Days of Action, education, student sponsorship, safer communities, and SDG-driven partnerships in Rwanda."
+      content="Youth-led climate action, education, student sponsorship, safer communities, partnerships, and verified donation support in Rwanda."
     />
     <meta name="twitter:image" content="https://www.qskigali.org/assets/hero-youth-climate-action.jpg" />
     <link rel="preload" as="image" href="assets/hero-youth-climate-action.jpg" />
@@ -58,6 +58,7 @@
         <a href="#global-days" data-i18n="navGlobalDays">Global Days</a>
         <a href="#impact" data-i18n="navImpact">Impact</a>
         <a href="#partners" data-i18n="navPartners">Partners</a>
+        <a href="#support" data-i18n="navSupport">Support</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
 
@@ -589,8 +590,6 @@
                 <option value="Global Days of Action" data-i18n="interestGlobalDays">Global Days of Action</option>
                 <option value="School Fees Sponsorship" data-i18n="interestSponsorship">School Fees Sponsorship</option>
                 <option value="Playground Restoration" data-i18n="interestPlayground">Playground Restoration</option>
-                <option value="Donation / sponsorship support" data-i18n="interestDonation">Donation / sponsorship support</option>
-                <option value="Bank transfer details request" data-i18n="interestBankTransfer">Bank transfer details request</option>
                 <option value="General partnership" data-i18n="interestGeneral">General partnership</option>
               </select>
             </label>
@@ -612,7 +611,9 @@
             </div>
           </form>
         </div>
+      </section>
 
+      <section class="section support-section" id="support">
         <div class="container support-panel" aria-labelledby="support-title">
           <div class="support-heading">
             <p class="eyebrow" data-i18n="supportEyebrow">Support & donations</p>
@@ -676,10 +677,10 @@
                 </p>
                 <a
                   class="button secondary full"
-                  href="#partnerForm"
-                  data-interest-target="Donation / sponsorship support"
+                  href="#donationForm"
+                  data-donation-method-target="Card payment"
                   data-i18n="onlinePaymentCta"
-                >Request payment guidance</a>
+                >Prepare a card donation</a>
               </article>
 
               <article class="payment-card bank-request-card">
@@ -687,14 +688,14 @@
                 <h4 data-i18n="bankDetailsTitle">Bank transfer by request</h4>
                 <p data-i18n="bankDetailsCopy">
                   To reduce public exposure of bank details, transfer information is shared after a supporter submits a
-                  request through the partnership form.
+                  support request form.
                 </p>
                 <a
                   class="button primary full"
-                  href="#partnerForm"
-                  data-interest-target="Bank transfer details request"
+                  href="#donationForm"
+                  data-donation-method-target="Bank transfer"
                   data-i18n="bankDetailsCta"
-                >Request transfer details</a>
+                >Prepare a bank transfer</a>
                 <p class="form-note" data-i18n="bankDetailsNote">
                   The council can verify the request, confirm the supported initiative, and send the correct transfer
                   instructions directly.
@@ -702,6 +703,172 @@
               </article>
             </div>
           </div>
+        </div>
+
+        <div class="container donation-request-layout">
+          <div class="donation-request-copy">
+            <p class="eyebrow" data-i18n="donationRequestEyebrow">Donation request</p>
+            <h3 data-i18n="donationRequestHeading">Start your support request.</h3>
+            <p data-i18n="donationRequestIntro">
+              Tell the council how you would like to contribute. You will receive verified bank-transfer instructions,
+              a pro forma invoice when requested, or a secure hosted card-payment link once available.
+            </p>
+            <ol class="donation-steps">
+              <li>
+                <span>1</span>
+                <div>
+                  <h4 data-i18n="donationStepOneTitle">Choose your support</h4>
+                  <p data-i18n="donationStepOneCopy">Select a project, frequency, intended amount, and preferred payment route.</p>
+                </div>
+              </li>
+              <li>
+                <span>2</span>
+                <div>
+                  <h4 data-i18n="donationStepTwoTitle">Submit your details</h4>
+                  <p data-i18n="donationStepTwoCopy">The request is sent securely to QS Impact Kigali Council.</p>
+                </div>
+              </li>
+              <li>
+                <span>3</span>
+                <div>
+                  <h4 data-i18n="donationStepThreeTitle">Receive instructions</h4>
+                  <p data-i18n="donationStepThreeCopy">The council confirms the next step and provides the correct payment document or link.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <form
+            class="donation-form"
+            id="donationForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input type="hidden" name="access_key" value="0c1c963b-fa57-43c3-970d-b88466e59a18" />
+            <input type="hidden" name="subject" value="New donation request - QS Impact Kigali Council" />
+            <input type="hidden" name="from_name" value="QS Kigali Support Page" />
+            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" />
+            <p class="label" data-i18n="donationFormLabel">Donation or sponsorship request</p>
+
+            <fieldset class="donation-fieldset">
+              <legend data-i18n="donationFrequencyLabel">Frequency</legend>
+              <div class="donation-choice-grid">
+                <label class="choice-option">
+                  <input type="radio" name="frequency" value="One-time" checked />
+                  <span data-i18n="donationFrequencyOnce">One-time</span>
+                </label>
+                <label class="choice-option">
+                  <input type="radio" name="frequency" value="Monthly" />
+                  <span data-i18n="donationFrequencyMonthly">Monthly</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-row amount-row">
+              <label>
+                <span data-i18n="donationAmountLabel">Intended amount</span>
+                <input name="amount" type="number" min="1" step="1" inputmode="decimal" required />
+              </label>
+              <label>
+                <span data-i18n="donationCurrencyLabel">Currency</span>
+                <select name="currency" required>
+                  <option value="EUR">EUR</option>
+                  <option value="USD">USD</option>
+                  <option value="RWF">RWF</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="amount-presets" role="group" aria-label="Suggested donation amounts" data-i18n-aria="donationAmountPresetsLabel">
+              <button type="button" data-donation-amount="25" aria-pressed="false">25</button>
+              <button type="button" data-donation-amount="50" aria-pressed="false">50</button>
+              <button type="button" data-donation-amount="100" aria-pressed="false">100</button>
+              <button type="button" data-donation-amount="250" aria-pressed="false">250</button>
+            </div>
+
+            <label>
+              <span data-i18n="donationInitiativeLabel">Initiative to support</span>
+              <select name="initiative" required>
+                <option value="School Fees Sponsorship" data-i18n="interestSponsorship">School Fees Sponsorship</option>
+                <option value="1000 Trees Initiative" data-i18n="interestTrees">1000 Trees Initiative</option>
+                <option value="Climate Education & Global Days of Action" data-i18n="donationInitiativeClimate">Climate Education & Global Days of Action</option>
+                <option value="Safe Learning & Playground Restoration" data-i18n="donationInitiativeSafety">Safe Learning & Playground Restoration</option>
+                <option value="General Support" data-i18n="supportRowGeneralTitle">General Support</option>
+              </select>
+            </label>
+
+            <div class="form-row">
+              <label>
+                <span data-i18n="donationDonorTypeLabel">Donor type</span>
+                <select name="donor_type" required>
+                  <option value="Individual" data-i18n="donationDonorIndividual">Individual</option>
+                  <option value="Company / organization" data-i18n="donationDonorCompany">Company / organization</option>
+                </select>
+              </label>
+              <label>
+                <span data-i18n="donationMethodLabel">Preferred payment route</span>
+                <select name="payment_method" required>
+                  <option value="Bank transfer" data-i18n="donationMethodBank">Bank transfer</option>
+                  <option value="Card payment" data-i18n="donationMethodCard">Card payment</option>
+                  <option value="Need guidance" data-i18n="donationMethodGuidance">I need guidance</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span data-i18n="donationNameLabel">Full name</span>
+                <input name="name" autocomplete="name" required />
+              </label>
+              <label>
+                <span data-i18n="donationOrganizationLabel">Company or organization (optional)</span>
+                <input name="organization" autocomplete="organization" />
+              </label>
+            </div>
+
+            <label>
+              <span data-i18n="donationEmailLabel">Email</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+
+            <label class="checkbox-line">
+              <input type="checkbox" name="proforma_invoice_requested" value="Yes" data-invoice-toggle />
+              <span data-i18n="donationInvoiceToggle">I need a pro forma invoice before payment.</span>
+            </label>
+
+            <div class="invoice-fields" data-invoice-fields hidden>
+              <label>
+                <span data-i18n="donationInvoiceNameLabel">Invoice name / legal entity</span>
+                <input name="invoice_name" />
+              </label>
+              <label>
+                <span data-i18n="donationInvoiceIdLabel">Registration or tax ID (optional)</span>
+                <input name="invoice_id" />
+              </label>
+              <label>
+                <span data-i18n="donationInvoiceAddressLabel">Invoice address</span>
+                <textarea name="invoice_address" rows="3"></textarea>
+              </label>
+            </div>
+
+            <label>
+              <span data-i18n="donationMessageLabel">Message (optional)</span>
+              <textarea
+                name="message"
+                rows="4"
+                data-i18n-placeholder="donationMessagePlaceholder"
+                placeholder="Add any details the council should know about your intended support."
+              ></textarea>
+            </label>
+
+            <button class="button primary full" type="submit" data-i18n="donationSubmit">Request donation instructions</button>
+            <p class="form-note form-safety-note" data-i18n="donationSafetyNote">
+              This form does not take payment. Never enter card numbers, CVV codes, banking passwords, or PINs here.
+            </p>
+            <div class="form-status" id="donationFormStatus" role="status" aria-live="polite" hidden>
+              <p></p>
+            </div>
+          </form>
         </div>
       </section>
 
