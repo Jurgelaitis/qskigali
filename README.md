@@ -26,6 +26,7 @@ Core communication goals:
 - **Real project visuals:** Uses authentic photos and video from QS Impact Kigali Council activities in Rwanda.
 - **Program filtering:** Visitors can filter programs by climate, education, and safety themes.
 - **Global Days of Action tab:** Dedicated section for the council's participation since 2024 and documented 2026 school outreach.
+- **Leadership section:** Presents the six-member 2026 executive team with official portraits, roles, areas of responsibility, and LinkedIn profiles.
 - **Impact section:** Highlights top-level outcomes, including 10,000+ young students reached, 1,000+ trees planted, and 200+ youth engaged through empowerment activities.
 - **Student sponsorship pathway:** Presents school-fee support for vulnerable high school students as a clear program and partnership opportunity.
 - **Dedicated Support tab:** Presents sponsorship priorities and a clear donation-request workflow without publishing bank account details.
@@ -78,6 +79,12 @@ rwanda-project-site/
 └── assets/
     ├── qsi-rwanda-kigali-logo.png
     ├── hero-youth-climate-action.jpg
+    ├── leadership-thomas-simbankabo.jpg
+    ├── leadership-scovia-ampumuza.jpg
+    ├── leadership-cyuzuzo-joyeuse.jpg
+    ├── leadership-sandy-mukundente.jpg
+    ├── leadership-ines-kayitesi.jpg
+    ├── leadership-marie-grace-izabayo.jpg
     ├── 1000-trees-initiative-github.mp4
     ├── tree-planting-students.jpg
     ├── green-school-assembly.jpg
