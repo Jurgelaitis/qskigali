@@ -773,6 +773,13 @@ p {
   color: var(--muted);
 }
 
+.program-copy .program-tagline {
+  margin: 10px 0 14px;
+  color: var(--forest);
+  font-weight: 850;
+  line-height: 1.4;
+}
+
 .program-copy ul {
   display: grid;
   gap: 10px;
