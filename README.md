@@ -28,7 +28,7 @@ Core communication goals:
 - **Global Days of Action tab:** Dedicated section for the council's participation since 2024 and documented 2026 school outreach.
 - **Leadership section:** Presents the six-member 2026 executive team with official portraits, roles, areas of responsibility, and LinkedIn profiles.
 - **Impact section:** Highlights top-level outcomes, including 10,000+ young students reached, 1,000+ trees planted, and 200+ youth engaged through empowerment activities.
-- **STAY & RISE pathway:** Presents a long-term student success program as a clear partnership opportunity, combining education continuity with mentorship, leadership, and career development.
+- **KOMEZA WIGE pathway:** Presents an education-continuity initiative as a clear partnership opportunity, combining full-year school-fee and learning-material support with consistent mentorship.
 - **Dedicated Support tab:** Presents sponsorship priorities and a clear donation-request workflow without publishing bank account details.
 - **Donation and invoice request form:** Captures one-time or monthly support intent, amount, currency, initiative, donor type, preferred payment route, and optional pro forma invoice information.
 - **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
@@ -48,8 +48,8 @@ The site currently presents six core program areas:
 - **SDG Champions Program**  
   A school-based leadership and sustainability education program for secondary students.
 
-- **STAY & RISE Initiative**  
-  *Keeping Students in School. Building Future Leaders.* A long-term student success program helping secondary-school learners overcome financial barriers, complete their education, and grow through mentorship, leadership, and career development. The initiative targets 50 students supported through graduation by 2030. Five students are currently enrolled, with five additional students planned for the 2026-2027 academic year.
+- **KOMEZA WIGE INITIATIVE**  
+  *Their Future Our Care.* QS Impact Kigali Council's education-continuity initiative supports students whose schooling is at risk because their families cannot meet education costs. Five students from Kinyinya received full-year school fees and learning materials during 2025-2026. The 2026-2027 target is to expand support to 10 students while continuing support for current participants, with planned reach across Nduba, Jali, Jabana, Gatsata, and Kinyinya.
 
 - **Global Days of Action**  
   A recurring climate education and youth action platform the council has participated in since 2024. The 2026 documentation now highlights six school communities and 3,950+ learners documented in available reports through sessions on climate change, carbon offsetting, biodiversity, waste management, tree planting, and youth leadership.
