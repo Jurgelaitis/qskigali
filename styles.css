@@ -1188,6 +1188,30 @@ p {
   color: var(--muted);
 }
 
+.payment-return {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 20px;
+  padding: 16px 18px;
+  border: 1px solid rgba(23, 79, 59, 0.24);
+  border-left: 4px solid var(--forest);
+  border-radius: var(--radius);
+  background: rgba(23, 79, 59, 0.06);
+}
+
+.payment-return[hidden] {
+  display: none;
+}
+
+.payment-return strong {
+  color: var(--forest);
+}
+
+.payment-return p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .support-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(330px, 0.65fr);
@@ -1267,13 +1291,62 @@ p {
   color: #fff;
 }
 
+.online-payment-card.is-live {
+  box-shadow: inset 0 4px 0 var(--gold);
+}
+
 .online-payment-card .label,
 .online-payment-card p {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.payment-card.online-payment-card > p:not(.label):not(.form-note) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .online-payment-card h4 {
   color: #fff;
+}
+
+.online-payment-card .checkout-methods {
+  margin: 18px 0 0;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.checkout-actions {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 14px;
+}
+
+.button.checkout-alt {
+  border-color: rgba(255, 255, 255, 0.48);
+  background: transparent;
+  color: #fff;
+}
+
+.button.checkout-alt:hover,
+.button.checkout-alt:focus-visible {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.online-payment-card .checkout-status {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.14);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.online-payment-card .checkout-status[data-status="live"] {
+  border-left: 3px solid var(--gold);
+  background: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .bank-request-card .button {

@@ -1,5 +1,6 @@
 const web3FormsEndpoint = "https://api.web3forms.com/submit";
 const web3FormsAccessKeyPlaceholder = "PASTE_WEB3FORMS_ACCESS_KEY_HERE";
+const paymentConfig = window.QSI_PAYMENT_CONFIG || {};
 
 const copy = {
   en: {
@@ -212,7 +213,10 @@ const copy = {
     supportEyebrow: "Support & donations",
     supportHeading: "Sponsor or donate to a priority area.",
     supportIntro:
-      "Supporters can contribute to a specific initiative, sponsor students, or make a general contribution. Payment details are shared through a verified follow-up instead of being posted publicly.",
+      "Supporters can use a verified hosted checkout when available, request bank-transfer details or an invoice, sponsor students, or make a general contribution.",
+    paymentReturnTitle: "Thank you for supporting our work.",
+    paymentReturnCopy:
+      "Your payment provider will send the final transaction confirmation. Please keep that receipt for your records.",
     supportTableTitle: "Sponsorship opportunities",
     supportTableOpportunity: "Opportunity",
     supportTablePurpose: "Purpose",
@@ -233,10 +237,19 @@ const copy = {
     supportRowGeneralPurpose: "Strengthen council operations and project delivery.",
     supportRowGeneralUse: "Coordination, reporting, communication, and monitoring.",
     onlinePaymentLabel: "Online payment",
-    onlinePaymentTitle: "Visa and card payments",
+    onlinePaymentTitle: "Secure card and mobile payments",
     onlinePaymentCopy:
-      "Visa and card payments should be handled only through a secure bank-hosted payment link or approved payment provider checkout. No card details are collected on this website.",
-    onlinePaymentCta: "Prepare a card donation",
+      "Make a one-time or monthly contribution through a verified provider-hosted checkout. QS Impact Kigali Council never receives or stores your card number, CVV, banking password, or PIN.",
+    checkoutMethods: "Card and mobile-payment options depend on the provider and selected currency.",
+    checkoutOnceFallback: "Request a one-time card link",
+    checkoutMonthlyFallback: "Request a monthly card link",
+    checkoutOnceLive: "Donate once securely",
+    checkoutMonthlyLive: "Give monthly securely",
+    checkoutPending:
+      "Direct checkout activates after the council's merchant account is verified. Until then, these buttons prepare a secure payment-link request.",
+    checkoutLive:
+      "Secure checkout is provided by {provider}. Payment details are entered only on the provider's encrypted page.",
+    checkoutProviderGeneric: "the approved payment provider",
     bankDetailsLabel: "Bank transfer",
     bankDetailsTitle: "Bank transfer by request",
     bankDetailsCopy:
@@ -245,9 +258,9 @@ const copy = {
     bankDetailsNote:
       "The council can verify the request, confirm the supported initiative, and send the correct transfer instructions directly.",
     donationRequestEyebrow: "Donation request",
-    donationRequestHeading: "Start your support request.",
+    donationRequestHeading: "Need an invoice, transfer, or payment help?",
     donationRequestIntro:
-      "Tell the council how you would like to contribute. You will receive verified bank-transfer instructions, a pro forma invoice when requested, or a secure hosted card-payment link once available.",
+      "Use the secure checkout above when it is active. Use this form to request card-payment help, verified bank-transfer instructions, a pro forma invoice, or initiative-specific support.",
     donationStepOneTitle: "Choose your support",
     donationStepOneCopy: "Select a project, frequency, intended amount, and preferred payment route.",
     donationStepTwoTitle: "Submit your details",
@@ -526,7 +539,10 @@ const copy = {
     supportEyebrow: "Inkunga n'impano",
     supportHeading: "Tera inkunga cyangwa utange impano ku gikorwa cy'ibanze.",
     supportIntro:
-      "Abadushyigikira bashobora gutanga inkunga ku gikorwa kihariye, gufasha abanyeshuri cyangwa gutanga inkunga rusange. Amakuru yo kwishyura atangwa nyuma yo kugenzura ubusabe aho gushyirwa ku rubuga ku mugaragaro.",
+      "Abaterankunga bashobora gukoresha urubuga rwizewe rwo kwishyura igihe ruboneka, gusaba amakuru ya banki cyangwa invoice, gufasha abanyeshuri, cyangwa gutanga inkunga rusange.",
+    paymentReturnTitle: "Murakoze gushyigikira ibikorwa byacu.",
+    paymentReturnCopy:
+      "Utanga serivisi yo kwishyura azaboherereza icyemezo cya nyuma cy'ubwishyu. Mubike iyo risiti mu nyandiko zanyu.",
     supportTableTitle: "Aho inkunga ikenewe",
     supportTableOpportunity: "Amahirwe",
     supportTablePurpose: "Intego",
@@ -547,10 +563,19 @@ const copy = {
     supportRowGeneralPurpose: "Gukomeza imikorere y'inama n'ishyirwa mu bikorwa ry'imishinga.",
     supportRowGeneralUse: "Guhuza ibikorwa, raporo, itumanaho no gukurikirana.",
     onlinePaymentLabel: "Kwishyura online",
-    onlinePaymentTitle: "Kwishyura na Visa cyangwa ikarita",
+    onlinePaymentTitle: "Kwishyura n'ikarita cyangwa Mobile Money mu buryo bwizewe",
     onlinePaymentCopy:
-      "Kwishyura na Visa cyangwa ikarita bigomba gukorwa gusa binyuze ku muyoboro wizewe wa banki cyangwa payment provider yemewe. Nta makuru y'ikarita abikwa kuri uru rubuga.",
-    onlinePaymentCta: "Tegura inkunga y'ikarita",
+      "Tanga inkunga inshuro imwe cyangwa buri kwezi unyuze ku rubuga rw'utanga serivisi yo kwishyura wemewe. QS Impact Kigali Council ntiyakira cyangwa ngo ibike nimero y'ikarita, CVV, ijambo ry'ibanga rya banki cyangwa PIN.",
+    checkoutMethods: "Amahitamo y'ikarita na Mobile Money aterwa n'utanga serivisi n'ifaranga ryatoranyijwe.",
+    checkoutOnceFallback: "Saba link yo kwishyura inshuro imwe",
+    checkoutMonthlyFallback: "Saba link yo kwishyura buri kwezi",
+    checkoutOnceLive: "Tanga inkunga rimwe mu buryo bwizewe",
+    checkoutMonthlyLive: "Tanga inkunga buri kwezi mu buryo bwizewe",
+    checkoutPending:
+      "Kwishyura ako kanya bizatangira konti y'umuryango imaze kwemezwa. Kugeza icyo gihe, izi buto zitegura ubusabe bwa link yizewe yo kwishyura.",
+    checkoutLive:
+      "Kwishyura mu buryo bwizewe bikorwa na {provider}. Amakuru yo kwishyura yinjizwa gusa ku rupapuro rwabugenewe kandi rubitswe n'utanga serivisi.",
+    checkoutProviderGeneric: "utanga serivisi yo kwishyura wemewe",
     bankDetailsLabel: "Kohereza kuri banki",
     bankDetailsTitle: "Amakuru ya banki atangwa bisabwe",
     bankDetailsCopy:
@@ -559,9 +584,9 @@ const copy = {
     bankDetailsNote:
       "Inama ishobora kugenzura ubusabe, kwemeza igikorwa gishyigikirwa, no kohereza amabwiriza nyayo yo kwishyura mu buryo butaziguye.",
     donationRequestEyebrow: "Ubusabe bw'inkunga",
-    donationRequestHeading: "Tangira ubusabe bwawe bwo gutera inkunga.",
+    donationRequestHeading: "Ukeneye invoice, kohereza kuri banki cyangwa ubufasha bwo kwishyura?",
     donationRequestIntro:
-      "Menyesha inama uko wifuza gutanga inkunga. Uzahabwa amabwiriza ya banki yagenzuwe, pro forma invoice igihe uyisabye, cyangwa link yizewe yo kwishyura n'ikarita igihe izaba iboneka.",
+      "Koresha uburyo bwizewe bwo kwishyura buri hejuru igihe bukora. Koresha iyi fomu gusaba ubufasha bwo kwishyura n'ikarita, amakuru ya banki yagenzuwe, pro forma invoice cyangwa gushyigikira igikorwa runaka.",
     donationStepOneTitle: "Hitamo icyo ushyigikira",
     donationStepOneCopy: "Hitamo umushinga, inshuro, amafaranga uteganya n'uburyo bwo kwishyura.",
     donationStepTwoTitle: "Ohereza amakuru yawe",
@@ -635,6 +660,62 @@ let currentLanguage = "en";
 
 const getCopy = (key) => copy[currentLanguage][key] || copy.en[key] || "";
 
+function getSecureCheckoutUrl(value) {
+  if (typeof value !== "string" || !value.trim()) return "";
+
+  try {
+    const url = new URL(value.trim());
+    return url.protocol === "https:" ? url.href : "";
+  } catch {
+    return "";
+  }
+}
+
+function syncPaymentCheckout() {
+  const checkoutLinks = document.querySelectorAll("[data-checkout-link]");
+  const checkoutCard = document.querySelector("[data-checkout-card]");
+  const checkoutStatus = document.querySelector("[data-checkout-status]");
+  let activeLinks = 0;
+
+  checkoutLinks.forEach((link) => {
+    const isMonthly = link.dataset.checkoutLink === "monthly";
+    const configuredUrl = getSecureCheckoutUrl(isMonthly ? paymentConfig.monthlyUrl : paymentConfig.oneTimeUrl);
+    const labelKey = isMonthly
+      ? configuredUrl
+        ? "checkoutMonthlyLive"
+        : "checkoutMonthlyFallback"
+      : configuredUrl
+        ? "checkoutOnceLive"
+        : "checkoutOnceFallback";
+
+    link.textContent = getCopy(labelKey);
+    link.setAttribute("aria-label", getCopy(labelKey));
+    link.dataset.checkoutActive = String(Boolean(configuredUrl));
+
+    if (configuredUrl) {
+      activeLinks += 1;
+      link.href = configuredUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    } else {
+      link.href = "#donationForm";
+      link.removeAttribute("target");
+      link.removeAttribute("rel");
+    }
+  });
+
+  checkoutCard?.classList.toggle("is-live", activeLinks > 0);
+  if (!checkoutStatus) return;
+
+  checkoutStatus.dataset.status = activeLinks > 0 ? "live" : "pending";
+  if (activeLinks > 0) {
+    const provider = String(paymentConfig.providerName || "").trim() || getCopy("checkoutProviderGeneric");
+    checkoutStatus.textContent = getCopy("checkoutLive").replace("{provider}", provider);
+  } else {
+    checkoutStatus.textContent = getCopy("checkoutPending");
+  }
+}
+
 function setLanguage(language) {
   currentLanguage = copy[language] ? language : "en";
   document.documentElement.lang = currentLanguage;
@@ -667,6 +748,8 @@ function setLanguage(language) {
     button.setAttribute("aria-pressed", String(isActive));
   });
 
+  syncPaymentCheckout();
+
   try {
     localStorage.setItem("qsi-language", currentLanguage);
   } catch {
@@ -687,6 +770,14 @@ function initLanguage() {
   document.querySelectorAll("[data-language]").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.language));
   });
+}
+
+function initPaymentReturn() {
+  const banner = document.querySelector("[data-payment-return]");
+  if (!banner) return;
+
+  const query = new URLSearchParams(window.location.search);
+  banner.hidden = query.get("donation") !== "thank-you";
 }
 
 function initNavigation() {
@@ -839,9 +930,16 @@ function initForms() {
   const methodSelect = donationForm.querySelector('select[name="payment_method"]');
   document.querySelectorAll("[data-donation-method-target]").forEach((link) => {
     link.addEventListener("click", () => {
+      if (link.dataset.checkoutActive === "true") return;
+
       const target = link.dataset.donationMethodTarget;
-      if (!methodSelect || !target) return;
-      methodSelect.value = target;
+      if (methodSelect && target) methodSelect.value = target;
+
+      const frequencyTarget = link.dataset.donationFrequencyTarget;
+      const frequencyInput = [...donationForm.querySelectorAll('input[name="frequency"]')].find(
+        (input) => input.value === frequencyTarget,
+      );
+      if (frequencyInput) frequencyInput.checked = true;
     });
   });
 
@@ -917,6 +1015,7 @@ function initMetricReveal() {
 }
 
 initLanguage();
+initPaymentReturn();
 initNavigation();
 initProgramFilters();
 initForms();

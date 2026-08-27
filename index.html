@@ -24,8 +24,9 @@
       content="Youth-led climate action, education, the KOMEZA WIGE INITIATIVE, safer communities, partnerships, and verified donation support in Rwanda."
     />
     <meta name="twitter:image" content="https://www.qskigali.org/assets/hero-youth-climate-action.jpg" />
+    <link rel="icon" type="image/png" href="assets/qsi-rwanda-kigali-logo.png" />
     <link rel="preload" as="image" href="assets/hero-youth-climate-action.jpg" />
-    <link rel="stylesheet" href="styles.css?v=20260807-leadership" />
+    <link rel="stylesheet" href="styles.css?v=20260827-payments" />
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
@@ -629,6 +630,13 @@
             </p>
           </div>
 
+          <div class="payment-return" data-payment-return role="status" aria-live="polite" hidden>
+            <strong data-i18n="paymentReturnTitle">Thank you for supporting our work.</strong>
+            <p data-i18n="paymentReturnCopy">
+              Your payment provider will send the final transaction confirmation. Please keep that receipt for your records.
+            </p>
+          </div>
+
           <div class="support-grid">
             <article class="support-table-card">
               <h4 data-i18n="supportTableTitle">Sponsorship opportunities</h4>
@@ -673,19 +681,38 @@
             </article>
 
             <div class="payment-stack">
-              <article class="payment-card online-payment-card">
+              <article class="payment-card online-payment-card" data-checkout-card>
                 <p class="label" data-i18n="onlinePaymentLabel">Online payment</p>
-                <h4 data-i18n="onlinePaymentTitle">Visa and card payments</h4>
+                <h4 data-i18n="onlinePaymentTitle">Secure card and mobile payments</h4>
                 <p data-i18n="onlinePaymentCopy">
-                  Visa and card payments should be handled only through a secure bank-hosted payment link or approved
-                  payment provider checkout. No card details are collected on this website.
+                  Make a one-time or monthly contribution through a verified provider-hosted checkout. QS Impact Kigali
+                  Council never receives or stores your card number, CVV, banking password, or PIN.
                 </p>
-                <a
-                  class="button secondary full"
-                  href="#donationForm"
-                  data-donation-method-target="Card payment"
-                  data-i18n="onlinePaymentCta"
-                >Prepare a card donation</a>
+                <p class="checkout-methods" data-i18n="checkoutMethods">
+                  Card and mobile-payment options depend on the provider and selected currency.
+                </p>
+                <div class="checkout-actions">
+                  <a
+                    class="button primary full"
+                    href="#donationForm"
+                    data-checkout-link="one-time"
+                    data-donation-method-target="Card payment"
+                    data-donation-frequency-target="One-time"
+                    data-i18n="checkoutOnceFallback"
+                  >Request a one-time card link</a>
+                  <a
+                    class="button checkout-alt full"
+                    href="#donationForm"
+                    data-checkout-link="monthly"
+                    data-donation-method-target="Card payment"
+                    data-donation-frequency-target="Monthly"
+                    data-i18n="checkoutMonthlyFallback"
+                  >Request a monthly card link</a>
+                </div>
+                <p class="checkout-status" data-checkout-status data-i18n="checkoutPending">
+                  Direct checkout activates after the council's merchant account is verified. Until then, these buttons
+                  prepare a secure payment-link request.
+                </p>
               </article>
 
               <article class="payment-card bank-request-card">
@@ -713,10 +740,10 @@
         <div class="container donation-request-layout">
           <div class="donation-request-copy">
             <p class="eyebrow" data-i18n="donationRequestEyebrow">Donation request</p>
-            <h3 data-i18n="donationRequestHeading">Start your support request.</h3>
+            <h3 data-i18n="donationRequestHeading">Need an invoice, transfer, or payment help?</h3>
             <p data-i18n="donationRequestIntro">
-              Tell the council how you would like to contribute. You will receive verified bank-transfer instructions,
-              a pro forma invoice when requested, or a secure hosted card-payment link once available.
+              Use the secure checkout above when it is active. Use this form to request card-payment help, verified
+              bank-transfer instructions, a pro forma invoice, or initiative-specific support.
             </p>
             <ol class="donation-steps">
               <li>
@@ -1129,6 +1156,7 @@
         "areaServed": "Rwanda"
       }
     </script>
-    <script src="script.js?v=20260807-leadership"></script>
+    <script src="payment-config.js?v=20260827"></script>
+    <script src="script.js?v=20260827-payments"></script>
   </body>
 </html>

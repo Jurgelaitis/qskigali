@@ -30,6 +30,7 @@ Core communication goals:
 - **Impact section:** Highlights top-level outcomes, including 10,000+ young students reached, 1,000+ trees planted, and 200+ youth engaged through empowerment activities.
 - **KOMEZA WIGE pathway:** Presents an education-continuity initiative as a clear partnership opportunity, combining full-year school-fee and learning-material support with consistent mentorship.
 - **Dedicated Support tab:** Presents sponsorship priorities and a clear donation-request workflow without publishing bank account details.
+- **Provider-ready direct checkout:** Supports configurable one-time and monthly hosted-payment links, with a safe request-form fallback until merchant verification is complete.
 - **Donation and invoice request form:** Captures one-time or monthly support intent, amount, currency, initiative, donor type, preferred payment route, and optional pro forma invoice information.
 - **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
 - **Responsive design:** Optimized for desktop and mobile browsing.
@@ -64,6 +65,7 @@ This is a static website built with:
 - `index.html` for structure and content
 - `styles.css` for responsive visual design
 - `script.js` for language switching, navigation behavior, program filtering, metric animation, donation controls, and Web3Forms submissions
+- `payment-config.js` for public hosted-checkout URLs; it must never contain provider secrets
 - Local image assets in the `assets/` folder
 
 No build system, package manager, backend, or database is required.
@@ -75,6 +77,8 @@ rwanda-project-site/
 ├── index.html
 ├── styles.css
 ├── script.js
+├── payment-config.js
+├── PAYMENT_SETUP.md
 ├── README.md
 └── assets/
     ├── qsi-rwanda-kigali-logo.png
@@ -160,7 +164,9 @@ Before public launch, submit one test partnership inquiry and one donation reque
 
 The Support section does not publish bank account details directly. Supporters can submit a structured request that records their intended amount, currency, initiative, donor type, payment preference, and whether a pro forma invoice is required. The council can then verify the request and share the correct transfer instructions directly.
 
-The website does not collect card details. Live Visa/card payments must use a secure bank-hosted payment link or an approved hosted payment-provider checkout. When a provider URL is issued, the card-payment call to action can be connected directly to that hosted checkout.
+The website does not collect card or Mobile Money credentials. Direct one-time and monthly buttons use an approved provider's hosted checkout when public URLs are configured in `payment-config.js`. If either URL is absent or invalid, its button automatically falls back to the secure donation-request form and selects the matching payment frequency.
+
+The code is provider-neutral, while Flutterwave is the recommended starting point for merchant onboarding in Rwanda. Complete setup and launch instructions are in [`PAYMENT_SETUP.md`](PAYMENT_SETUP.md). Only public HTTPS checkout links belong in the repository; provider API keys and other secrets must never be committed.
 
 ## Content Notes
 
