@@ -422,6 +422,13 @@ p {
   background: var(--surface-soft);
 }
 
+.partner-logo-section {
+  overflow: hidden;
+  padding: 54px 0 62px;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
 .programs-section,
 .partners-section {
   background: var(--surface);
@@ -1063,61 +1070,66 @@ p {
   margin-top: 28px;
 }
 
-.partner-network {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
-  align-items: center;
+.partner-logo-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
   gap: 24px;
+}
+
+.partner-logo-heading .eyebrow {
+  margin: 0;
+}
+
+.partner-logo-heading h2 {
+  font-size: 1.8rem;
+}
+
+.partner-logo-slider {
+  overflow: hidden;
   margin-top: 28px;
-  padding: 20px 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
-.partner-network-copy .label {
-  color: var(--clay);
-}
-
-.partner-network-copy p:last-child {
-  margin: 0;
-  font-size: 0.94rem;
-}
-
-.partner-identity {
-  display: grid;
-  grid-template-columns: 104px minmax(0, 1fr);
+.partner-logo-track {
+  --partner-drift: 24px;
+  display: flex;
+  min-height: 154px;
   align-items: center;
-  gap: 18px;
-  min-width: 0;
+  justify-content: center;
+  padding: 18px 40px;
+  animation: partner-logo-glide 7s ease-in-out infinite alternate;
 }
 
-.partner-identity img {
-  width: 104px;
-  height: 128px;
-  padding: 7px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: #fff;
+.partner-logo-item {
+  display: grid;
+  width: min(390px, 100%);
+  grid-template-columns: 92px minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.partner-logo-item img {
+  width: 92px;
+  height: 118px;
   object-fit: contain;
 }
 
-.partner-identity span,
-.partner-identity strong {
-  display: block;
-}
-
-.partner-identity span {
-  margin-bottom: 7px;
-  color: var(--clay);
-  font-size: 0.76rem;
-  font-weight: 850;
-  text-transform: uppercase;
-}
-
-.partner-identity strong {
+.partner-logo-item strong {
   overflow-wrap: anywhere;
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   line-height: 1.25;
+}
+
+@keyframes partner-logo-glide {
+  from {
+    transform: translateX(calc(var(--partner-drift) * -1));
+  }
+
+  to {
+    transform: translateX(var(--partner-drift));
+  }
 }
 
 .partner-pathway article {
@@ -1985,18 +1997,34 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .partner-network {
-    grid-template-columns: 1fr;
-    gap: 18px;
+  .partner-logo-section {
+    padding: 42px 0 48px;
   }
 
-  .partner-identity {
-    grid-template-columns: 88px minmax(0, 1fr);
+  .partner-logo-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
   }
 
-  .partner-identity img {
-    width: 88px;
-    height: 110px;
+  .partner-logo-heading h2 {
+    font-size: 1.55rem;
+  }
+
+  .partner-logo-track {
+    --partner-drift: 10px;
+    min-height: 136px;
+    padding: 14px 18px;
+  }
+
+  .partner-logo-item {
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .partner-logo-item img {
+    width: 80px;
+    height: 104px;
   }
 
   .leader-card-copy {
@@ -2077,5 +2105,11 @@ p {
   .bank-details div {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partner-logo-track {
+    animation: none;
   }
 }
