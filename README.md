@@ -24,6 +24,7 @@ Core communication goals:
 - **Bilingual interface:** English as the default language, with Kinyarwanda/Rwanda language support as a secondary option.
 - **Professional organizational layout:** Corporate-style design with restrained regional and project-related visual accents.
 - **Real project visuals:** Uses authentic photos and video from QS Impact Kigali Council activities in Rwanda.
+- **Partner recognition:** Presents Digital Connect Foundation within a scalable partner network area.
 - **Program filtering:** Visitors can filter programs by climate, education, and safety themes.
 - **Global Days of Action tab:** Dedicated section for the council's participation since 2024 and documented 2026 school outreach.
 - **Leadership section:** Presents the seven-member 2026 leadership team with official portraits, roles, areas of responsibility, and LinkedIn profiles.
@@ -82,6 +83,7 @@ rwanda-project-site/
 ├── README.md
 └── assets/
     ├── qsi-rwanda-kigali-logo.png
+    ├── digital-connect-foundation-logo.jpg
     ├── hero-youth-climate-action.jpg
     ├── leadership-thomas-simbankabo.jpg
     ├── leadership-scovia-ampumuza.jpg

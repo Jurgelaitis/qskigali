@@ -203,6 +203,11 @@ const copy = {
     partnersHeading: "A clear route for institutions, companies, and development partners.",
     partnersIntro:
       "QS Impact Kigali Council is seeking partners who can help sustain tree survival, expand school programs, grow the KOMEZA WIGE INITIATIVE, fund safety infrastructure, and strengthen youth-led green action across Rwanda.",
+    partnerNetworkLabel: "Partner network",
+    partnerNetworkCopy: "Organizations working alongside the council to turn local priorities into practical action.",
+    partnerOrganizationLabel: "Partner organization",
+    partnerNetworkAria: "QS Impact Kigali Council partner organizations",
+    digitalConnectLogoAlt: "Digital Connect Foundation logo",
     pathwayFundTitle: "Fund implementation",
     pathwayFundCopy: "Support tools, materials, transport, school facilities, and project delivery.",
     pathwayExpertiseTitle: "Share expertise",
@@ -533,6 +538,11 @@ const copy = {
     partnersHeading: "Inzira isobanutse ku bigo, amasosiyete n'abafatanyabikorwa b'iterambere.",
     partnersIntro:
       "QS Impact Kigali Council irashaka abafatanyabikorwa bafasha kurinda ibiti, kwagura gahunda z'amashuri, gukomeza KOMEZA WIGE INITIATIVE, gutera inkunga ibikorwa by'umutekano no gukomeza ibikorwa by'u Rwanda rwatsi biyobowe n'urubyiruko.",
+    partnerNetworkLabel: "Abafatanyabikorwa bacu",
+    partnerNetworkCopy: "Ibigo bikorana n'inama kugira ngo ibyihutirwa by'abaturage bihinduke ibikorwa bifatika.",
+    partnerOrganizationLabel: "Ikigo cy'umufatanyabikorwa",
+    partnerNetworkAria: "Ibigo by'abafatanyabikorwa bya QS Impact Kigali Council",
+    digitalConnectLogoAlt: "Ikirango cya Digital Connect Foundation",
     pathwayFundTitle: "Tera inkunga ishyirwa mu bikorwa",
     pathwayFundCopy: "Shyigikira ibikoresho, transport, ibikorwa by'amashuri n'ishyirwa mu bikorwa.",
     pathwayExpertiseTitle: "Sangiza ubumenyi",
