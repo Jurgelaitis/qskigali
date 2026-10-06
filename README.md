@@ -17,7 +17,7 @@ Core communication goals:
 - Highlight climate action, education, safety, and community transformation initiatives.
 - Document the council's Global Days of Action participation since 2024, including 2026 school-based climate education activities.
 - Make it easy for partners, institutions, companies, and development organizations to understand the council's work.
-- Provide a clear path for partnership inquiries.
+- Provide a clear contact path for prospective partners.
 
 ## Key Features
 
@@ -33,7 +33,6 @@ Core communication goals:
 - **Dedicated Support tab:** Presents sponsorship priorities and a clear donation-request workflow without publishing bank account details.
 - **Provider-ready direct checkout:** Supports configurable one-time and monthly hosted-payment links, with a safe request-form fallback until merchant verification is complete.
 - **Donation and invoice request form:** Captures one-time or monthly support intent, amount, currency, initiative, donor type, preferred payment route, and optional pro forma invoice information.
-- **Partnership inquiry form:** Sends partner inquiries through Web3Forms, so visitors do not need to use their own email app.
 - **Responsive design:** Optimized for desktop and mobile browsing.
 - **SEO and sharing metadata:** Includes canonical URL, Open Graph, Twitter card metadata, and structured organization data.
 

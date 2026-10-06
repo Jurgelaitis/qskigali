@@ -931,13 +931,6 @@ function initWeb3Form({ formId, statusId, sendingKey, successKey, errorKey }) {
 }
 
 function initForms() {
-  initWeb3Form({
-    formId: "partnerForm",
-    statusId: "formStatus",
-    sendingKey: "formSending",
-    successKey: "formSuccess",
-    errorKey: "formError",
-  });
   const donationForm = initWeb3Form({
     formId: "donationForm",
     statusId: "donationFormStatus",
