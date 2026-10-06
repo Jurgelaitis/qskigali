@@ -26,7 +26,7 @@
     <meta name="twitter:image" content="https://www.qskigali.org/assets/hero-youth-climate-action.jpg" />
     <link rel="icon" type="image/png" href="assets/qsi-rwanda-kigali-logo.png" />
     <link rel="preload" as="image" href="assets/hero-youth-climate-action.jpg" />
-    <link rel="stylesheet" href="styles.css?v=20261005-green-heroes" />
+    <link rel="stylesheet" href="styles.css?v=20261006-ui-refinement" />
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
@@ -79,7 +79,6 @@
           data-i18n-alt="heroImageAlt"
         />
         <div class="hero-content">
-          <img class="hero-logo" src="assets/qsi-rwanda-kigali-logo.png" alt="QS Impact Kigali" />
           <p class="eyebrow light" data-i18n="heroEyebrow">Kigali, Rwanda | Youth-led sustainable development</p>
           <h1 id="hero-title">QS Impact Kigali Council</h1>
           <p class="hero-lead" data-i18n="heroLead">
@@ -183,7 +182,7 @@
             <p class="eyebrow" data-i18n="programsEyebrow">Programs</p>
             <h2 data-i18n="programsHeading">Current priorities with measurable community value.</h2>
           </div>
-          <div class="segment-control" role="tablist" aria-label="Program filters" data-i18n-aria="programFilters">
+          <div class="segment-control" role="group" aria-label="Program filters" data-i18n-aria="programFilters">
             <button class="is-active" type="button" data-filter="all" aria-pressed="true" data-i18n="filterAll">
               All
             </button>
@@ -211,18 +210,25 @@
             <div class="program-copy">
               <p class="label" data-i18n="programTreesLabel">2025-2030 flagship</p>
               <h3 data-i18n="programTreesTitle">1000 Trees Initiative</h3>
-              <p data-i18n="programTreesCopy">
-                A five-year restoration commitment supporting Rwanda's green growth agenda through school-based tree
-                planting, student environmental clubs, and climate education.
-              </p>
-              <ul>
+              <p data-i18n="programTreesSummary">School-based tree planting, environmental clubs and long-term tree care.</p>
+              <ul class="program-facts">
                 <li data-i18n="programTreesPoint1">1,000+ trees planted under the 2025-2030 program.</li>
-                <li data-i18n="programTreesPoint2">Fruit trees, agroforestry species, and native varieties.</li>
-                <li data-i18n="programTreesPoint3">Ongoing care through school clubs and volunteers.</li>
                 <li data-i18n="programTreesPoint4">
                   Collaboration with Green Heroes Austria supports the 1,000 Trees for Rwanda initiative.
                 </li>
               </ul>
+              <details class="program-details">
+                <summary data-i18n="projectDetails">Project details</summary>
+                <p data-i18n="programTreesCopy">
+                A five-year restoration commitment supporting Rwanda's green growth agenda through school-based tree
+                planting, student environmental clubs, and climate education.
+              </p>
+                <ul>
+                  <li data-i18n="programTreesPoint2">Fruit trees, agroforestry species, and native varieties.</li>
+                  <li data-i18n="programTreesPoint3">Ongoing care through school clubs and volunteers.</li>
+                </ul>
+              </details>
+              <a class="program-support" href="#donationForm" data-initiative-target="1000 Trees Initiative"><span data-i18n="supportInitiative">Support this initiative</span><span aria-hidden="true">&#8594;</span></a>
             </div>
           </article>
 
@@ -234,16 +240,23 @@
             />
             <div class="program-copy">
               <p class="label" data-i18n="programKimisangeLabel">24-month transformation</p>
-              <h3 data-i18n="programKimisangeTitle">Kimisange Safe Learning & Green Community</h3>
-              <p data-i18n="programKimisangeCopy">
+              <h3 data-i18n="programKimisangeTitle">Kimisange Safe Learning &amp; Green Community</h3>
+              <p data-i18n="programKimisangeSummary">A proposed safer, greener campus for 2,700+ students at a 7-hectare public school.</p>
+              <ul class="program-facts">
+                <li data-i18n="programKimisangePoint1">Road relocation and secure school boundaries.</li>
+                <li data-i18n="programKimisangePoint2">Climate-resilient classrooms, pathways, and playgrounds.</li>
+              </ul>
+              <details class="program-details">
+                <summary data-i18n="projectDetails">Project details</summary>
+                <p data-i18n="programKimisangeCopy">
                 A proposed transformation of a 7-hectare public school serving 2,700+ students into a safer, greener,
                 more inclusive learning environment.
               </p>
-              <ul>
-                <li data-i18n="programKimisangePoint1">Road relocation and secure school boundaries.</li>
-                <li data-i18n="programKimisangePoint2">Climate-resilient classrooms, pathways, and playgrounds.</li>
-                <li data-i18n="programKimisangePoint3">Youth training and community-supportive facilities.</li>
-              </ul>
+                <ul>
+                  <li data-i18n="programKimisangePoint3">Youth training and community-supportive facilities.</li>
+                </ul>
+              </details>
+              <a class="program-support" href="#donationForm" data-initiative-target="Safe Learning & Playground Restoration"><span data-i18n="supportInitiative">Support this initiative</span><span aria-hidden="true">&#8594;</span></a>
             </div>
           </article>
 
@@ -256,15 +269,22 @@
             <div class="program-copy">
               <p class="label" data-i18n="programSdgLabel">School leadership</p>
               <h3 data-i18n="programSdgTitle">SDG Champions Program</h3>
-              <p data-i18n="programSdgCopy">
+              <p data-i18n="programSdgSummary">Practical sustainability education that helps secondary students lead local action.</p>
+              <ul class="program-facts">
+                <li data-i18n="programSdgPoint1">Launched with 60 Senior 5 and Senior 6 students.</li>
+                <li data-i18n="programSdgPoint2">Supports plastic-free campaigns and awareness clubs.</li>
+              </ul>
+              <details class="program-details">
+                <summary data-i18n="projectDetails">Project details</summary>
+                <p data-i18n="programSdgCopy">
                 Practical sustainability education for secondary students, introducing climate action, sustainable
                 cities, and youth responsibility.
               </p>
-              <ul>
-                <li data-i18n="programSdgPoint1">Launched with 60 Senior 5 and Senior 6 students.</li>
-                <li data-i18n="programSdgPoint2">Supports plastic-free campaigns and awareness clubs.</li>
-                <li data-i18n="programSdgPoint3">Designed to grow a network of SDG youth ambassadors.</li>
-              </ul>
+                <ul>
+                  <li data-i18n="programSdgPoint3">Designed to grow a network of SDG youth ambassadors.</li>
+                </ul>
+              </details>
+              <a class="program-support" href="#donationForm" data-initiative-target="Climate Education &amp; Global Days of Action"><span data-i18n="supportInitiative">Support this initiative</span><span aria-hidden="true">&#8594;</span></a>
             </div>
           </article>
 
@@ -277,19 +297,26 @@
             <div class="program-copy">
               <p class="label" data-i18n="programSponsorshipLabel">Education continuity</p>
               <h3 data-i18n="programSponsorshipTitle">KOMEZA WIGE INITIATIVE</h3>
-              <p class="program-tagline" data-i18n="programSponsorshipTagline">
-                Their Future Our Care
-              </p>
-              <p data-i18n="programSponsorshipCopy">
+              <p class="program-tagline" data-i18n="programSponsorshipTagline">Their Future Our Care</p>
+              <p data-i18n="programSponsorshipSummary">School fees, learning materials and mentorship to help students stay in school.</p>
+              <ul class="program-facts">
+                <li data-i18n="programSponsorshipBrief1">5 students supported in 2025-2026.</li>
+                <li data-i18n="programSponsorshipBrief2">2026-2027 target: 10 students.</li>
+              </ul>
+              <details class="program-details">
+                <summary data-i18n="projectDetails">Project details</summary>
+                <p data-i18n="programSponsorshipCopy">
                 KOMEZA WIGE is QS Impact Kigali Council's education-continuity initiative supporting students whose
                 schooling is at risk because their families cannot meet education costs. It combines school-fee and
                 learning-material support with consistent mentorship through completion.
               </p>
-              <ul>
-                <li data-i18n="programSponsorshipPoint1">5 Kinyinya students received full-year school fees and learning materials in 2025-2026.</li>
-                <li data-i18n="programSponsorshipPoint2">Target: expand to 10 students in 2026-2027 while continuing support for current participants.</li>
-                <li data-i18n="programSponsorshipPoint3">Planned reach: Nduba, Jali, Jabana, Gatsata, and Kinyinya sectors.</li>
-              </ul>
+                <ul>
+                  <li data-i18n="programSponsorshipPoint1">5 Kinyinya students received full-year school fees and learning materials in 2025-2026.</li>
+                  <li data-i18n="programSponsorshipPoint2">Target: expand to 10 students in 2026-2027 while continuing support for current participants.</li>
+                  <li data-i18n="programSponsorshipPoint3">Planned reach: Nduba, Jali, Jabana, Gatsata, and Kinyinya sectors.</li>
+                </ul>
+              </details>
+              <a class="program-support" href="#donationForm" data-initiative-target="KOMEZA WIGE INITIATIVE"><span data-i18n="supportInitiative">Support this initiative</span><span aria-hidden="true">&#8594;</span></a>
             </div>
           </article>
 
@@ -302,15 +329,22 @@
             <div class="program-copy">
               <p class="label" data-i18n="programPlaygroundLabel">6-month micro-restoration</p>
               <h3 data-i18n="programPlaygroundTitle">Nduba Playground Restoration</h3>
-              <p data-i18n="programPlaygroundCopy">
+              <p data-i18n="programPlaygroundSummary">A safer, cleaner football playground for community sport, including the rainy season.</p>
+              <ul class="program-facts">
+                <li data-i18n="programPlaygroundPoint1">Ground leveling and basic drainage.</li>
+                <li data-i18n="programPlaygroundPoint2">Gender-responsive sanitation and handwashing.</li>
+              </ul>
+              <details class="program-details">
+                <summary data-i18n="projectDetails">Project details</summary>
+                <p data-i18n="programPlaygroundCopy">
                 A focused community sports and wellbeing project to make a football playground safer, cleaner, and usable
                 through the rainy season.
               </p>
-              <ul>
-                <li data-i18n="programPlaygroundPoint1">Ground leveling and basic drainage.</li>
-                <li data-i18n="programPlaygroundPoint2">Gender-responsive sanitation and handwashing.</li>
-                <li data-i18n="programPlaygroundPoint3">Local maintenance committee and youth sports activation.</li>
-              </ul>
+                <ul>
+                  <li data-i18n="programPlaygroundPoint3">Local maintenance committee and youth sports activation.</li>
+                </ul>
+              </details>
+              <a class="program-support" href="#donationForm" data-initiative-target="Safe Learning &amp; Playground Restoration"><span data-i18n="supportInitiative">Support this initiative</span><span aria-hidden="true">&#8594;</span></a>
             </div>
           </article>
         </div>
@@ -321,13 +355,11 @@
           <div>
             <p class="eyebrow" data-i18n="gdaEyebrow">Global Days of Action</p>
             <h2 data-i18n="gdaHeading">
-              Participating since 2024, turning climate awareness into school-based action.
+              Climate learning. Local action.
             </h2>
           </div>
           <p class="section-standfirst" data-i18n="gdaIntro">
-            QS Impact Kigali Council joins the Global Days of Action as a practical climate education platform:
-            reaching learners, strengthening environmental responsibility, and connecting local action to a global
-            youth movement.
+            Part of Global Days of Action since 2024, connecting Rwanda's school communities with a global youth movement.
           </p>
         </div>
 
@@ -416,288 +448,160 @@
 
       </section>
 
-      <section class="section support-section" id="support">
-        <div class="container support-panel" aria-labelledby="support-title">
+      <section class="section support-section" id="support" aria-labelledby="support-title">
+        <div class="container">
           <div class="support-heading">
-            <p class="eyebrow" data-i18n="supportEyebrow">Support & donations</p>
-            <h3 id="support-title" data-i18n="supportHeading">Sponsor or donate to a priority area.</h3>
-            <p data-i18n="supportIntro">
-              Supporters can contribute to a specific initiative, sponsor students, or make a general contribution.
-              Payment details are shared through a verified follow-up instead of being posted publicly.
-            </p>
+            <div>
+              <p class="eyebrow" data-i18n="supportEyebrow">Support & donations</p>
+              <h2 id="support-title" data-i18n="supportHeading">Support a future that matters.</h2>
+            </div>
+            <p data-i18n="supportIntro">Choose an initiative and tell us how you would like to help. The council will follow up with verified payment instructions.</p>
           </div>
 
           <div class="payment-return" data-payment-return role="status" aria-live="polite" hidden>
             <strong data-i18n="paymentReturnTitle">Thank you for supporting our work.</strong>
-            <p data-i18n="paymentReturnCopy">
-              Your payment provider will send the final transaction confirmation. Please keep that receipt for your records.
-            </p>
+            <p data-i18n="paymentReturnCopy">Your payment provider will send the final transaction confirmation. Please keep that receipt for your records.</p>
           </div>
 
-          <div class="support-grid">
-            <article class="support-table-card">
-              <h4 data-i18n="supportTableTitle">Sponsorship opportunities</h4>
-              <div class="table-wrap">
-                <table class="support-table">
-                  <thead>
-                    <tr>
-                      <th data-i18n="supportTableOpportunity">Opportunity</th>
-                      <th data-i18n="supportTablePurpose">Purpose</th>
-                      <th data-i18n="supportTableUse">Typical support</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td data-i18n="supportRowStudentsTitle">KOMEZA WIGE INITIATIVE</td>
-                      <td data-i18n="supportRowStudentsPurpose">Protect education continuity for students facing financial barriers.</td>
-                      <td data-i18n="supportRowStudentsUse">Full-year school fees, learning materials, and mentorship.</td>
-                    </tr>
-                    <tr>
-                      <td data-i18n="supportRowTreesTitle">1000 Trees Initiative</td>
-                      <td data-i18n="supportRowTreesPurpose">Support the 2025-2030 restoration commitment.</td>
-                      <td data-i18n="supportRowTreesUse">Seedlings, tools, transport, planting days, and tree care.</td>
-                    </tr>
-                    <tr>
-                      <td data-i18n="supportRowClimateTitle">Climate Education & Global Days of Action</td>
-                      <td data-i18n="supportRowClimatePurpose">Expand school outreach and youth climate learning.</td>
-                      <td data-i18n="supportRowClimateUse">Training materials, facilitation, transport, and documentation.</td>
-                    </tr>
-                    <tr>
-                      <td data-i18n="supportRowSafetyTitle">Safe Learning & Playground Restoration</td>
-                      <td data-i18n="supportRowSafetyPurpose">Improve safer, cleaner school and youth spaces.</td>
-                      <td data-i18n="supportRowSafetyUse">Drainage, sanitation, safety works, and youth activation.</td>
-                    </tr>
-                    <tr>
-                      <td data-i18n="supportRowGeneralTitle">General Support</td>
-                      <td data-i18n="supportRowGeneralPurpose">Strengthen council operations and project delivery.</td>
-                      <td data-i18n="supportRowGeneralUse">Coordination, reporting, communication, and monitoring.</td>
-                    </tr>
-                  </tbody>
-                </table>
+          <details class="support-opportunities">
+            <summary data-i18n="supportTableTitle">Explore sponsorship opportunities</summary>
+            <table class="support-table" role="table">
+              <thead role="rowgroup"><tr role="row">
+                <th scope="col" role="columnheader" data-i18n="supportTableOpportunity">Opportunity</th>
+                <th scope="col" role="columnheader" data-i18n="supportTablePurpose">Purpose</th>
+                <th scope="col" role="columnheader" data-i18n="supportTableUse">Typical support</th>
+              </tr></thead>
+              <tbody role="rowgroup">
+                <tr role="row">
+                  <th scope="row" role="rowheader"><a href="#donationForm" data-initiative-target="KOMEZA WIGE INITIATIVE"><span data-i18n="supportRowStudentsTitle">KOMEZA WIGE INITIATIVE</span><span class="support-select" data-i18n="selectInitiative">Select initiative</span></a></th>
+                  <td role="cell" data-i18n="supportRowStudentsPurpose">Protect education continuity for students facing financial barriers.</td>
+                  <td role="cell"><span class="mobile-cell-label" data-i18n="supportTableUse">Typical support</span><span data-i18n="supportRowStudentsUse">Full-year school fees, learning materials, and mentorship.</span></td>
+                </tr>
+                <tr role="row">
+                  <th scope="row" role="rowheader"><a href="#donationForm" data-initiative-target="1000 Trees Initiative"><span data-i18n="supportRowTreesTitle">1000 Trees Initiative</span><span class="support-select" data-i18n="selectInitiative">Select initiative</span></a></th>
+                  <td role="cell" data-i18n="supportRowTreesPurpose">Support the 2025-2030 restoration commitment.</td>
+                  <td role="cell"><span class="mobile-cell-label" data-i18n="supportTableUse">Typical support</span><span data-i18n="supportRowTreesUse">Seedlings, tools, transport, planting days, and tree care.</span></td>
+                </tr>
+                <tr role="row">
+                  <th scope="row" role="rowheader"><a href="#donationForm" data-initiative-target="Climate Education &amp; Global Days of Action"><span data-i18n="supportRowClimateTitle">Climate Education &amp; Global Days of Action</span><span class="support-select" data-i18n="selectInitiative">Select initiative</span></a></th>
+                  <td role="cell" data-i18n="supportRowClimatePurpose">Expand school outreach and youth climate learning.</td>
+                  <td role="cell"><span class="mobile-cell-label" data-i18n="supportTableUse">Typical support</span><span data-i18n="supportRowClimateUse">Training materials, facilitation, transport, and documentation.</span></td>
+                </tr>
+                <tr role="row">
+                  <th scope="row" role="rowheader"><a href="#donationForm" data-initiative-target="Safe Learning &amp; Playground Restoration"><span data-i18n="supportRowSafetyTitle">Safe Learning &amp; Playground Restoration</span><span class="support-select" data-i18n="selectInitiative">Select initiative</span></a></th>
+                  <td role="cell" data-i18n="supportRowSafetyPurpose">Improve safer, cleaner school and youth spaces.</td>
+                  <td role="cell"><span class="mobile-cell-label" data-i18n="supportTableUse">Typical support</span><span data-i18n="supportRowSafetyUse">Drainage, sanitation, safety works, and youth activation.</span></td>
+                </tr>
+                <tr role="row">
+                  <th scope="row" role="rowheader"><a href="#donationForm" data-initiative-target="General Support"><span data-i18n="supportRowGeneralTitle">General Support</span><span class="support-select" data-i18n="selectInitiative">Select initiative</span></a></th>
+                  <td role="cell" data-i18n="supportRowGeneralPurpose">Strengthen council operations and project delivery.</td>
+                  <td role="cell"><span class="mobile-cell-label" data-i18n="supportTableUse">Typical support</span><span data-i18n="supportRowGeneralUse">Coordination, reporting, communication, and monitoring.</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </details>
+
+          <div class="donation-request-layout">
+            <aside class="donation-request-copy">
+              <p class="eyebrow" data-i18n="donationRequestEyebrow">Your support</p>
+              <h3 data-i18n="donationRequestHeading">A clear next step.</h3>
+              <p data-i18n="donationRequestIntro">Request a payment link, bank-transfer instructions or a pro forma invoice. No payment is taken by this form.</p>
+              <div class="support-assurance">
+                <h4 data-i18n="supportAssuranceTitle">Direct to the council</h4>
+                <p data-i18n="supportAssuranceCopy">Your request goes to QS Impact Kigali Council. Bank details are shared privately, and card payments use a verified provider's checkout.</p>
+                <a href="mailto:kigalicouncil@qsimpact.org">kigalicouncil@qsimpact.org</a>
               </div>
-            </article>
+            </aside>
 
-            <div class="payment-stack">
-              <article class="payment-card online-payment-card" data-checkout-card>
-                <p class="label" data-i18n="onlinePaymentLabel">Online payment</p>
-                <h4 data-i18n="onlinePaymentTitle">Secure card and mobile payments</h4>
-                <p data-i18n="onlinePaymentCopy">
-                  Make a one-time or monthly contribution through a verified provider-hosted checkout. QS Impact Kigali
-                  Council never receives or stores your card number, CVV, banking password, or PIN.
-                </p>
-                <p class="checkout-methods" data-i18n="checkoutMethods">
-                  Card and mobile-payment options depend on the provider and selected currency.
-                </p>
-                <div class="checkout-actions">
-                  <a
-                    class="button primary full"
-                    href="#donationForm"
-                    data-checkout-link="one-time"
-                    data-donation-method-target="Card payment"
-                    data-donation-frequency-target="One-time"
-                    data-i18n="checkoutOnceFallback"
-                  >Request a one-time card link</a>
-                  <a
-                    class="button checkout-alt full"
-                    href="#donationForm"
-                    data-checkout-link="monthly"
-                    data-donation-method-target="Card payment"
-                    data-donation-frequency-target="Monthly"
-                    data-i18n="checkoutMonthlyFallback"
-                  >Request a monthly card link</a>
+            <form class="donation-form" id="donationForm" tabindex="-1" aria-labelledby="donation-form-title" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="0c1c963b-fa57-43c3-970d-b88466e59a18" />
+              <input type="hidden" name="subject" value="New donation request - QS Impact Kigali Council" />
+              <input type="hidden" name="from_name" value="QS Kigali Support Page" />
+              <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <h3 id="donation-form-title" data-i18n="donationFormLabel">Your support request</h3>
+
+              <fieldset class="support-step">
+                <legend><span class="step-number" aria-hidden="true">01</span><span data-i18n="supportStepChoice">Choose your support</span></legend>
+                <div class="step-fields">
+                  <label>
+                    <span data-i18n="donationInitiativeLabel">Initiative to support</span>
+                    <select name="initiative" required aria-describedby="initiative-context">
+                      <option value="KOMEZA WIGE INITIATIVE" data-i18n="interestSponsorship">KOMEZA WIGE INITIATIVE</option>
+                      <option value="1000 Trees Initiative" data-i18n="interestTrees">1000 Trees Initiative</option>
+                      <option value="Climate Education &amp; Global Days of Action" data-i18n="donationInitiativeClimate">Climate Education &amp; Global Days of Action</option>
+                      <option value="Safe Learning &amp; Playground Restoration" data-i18n="donationInitiativeSafety">Safe Learning &amp; Playground Restoration</option>
+                      <option value="General Support" data-i18n="supportRowGeneralTitle">General Support</option>
+                    </select>
+                  </label>
+                  <p class="field-hint" id="initiative-context" data-initiative-context>Full-year school fees, learning materials, and mentorship.</p>
+                  <fieldset class="donation-fieldset">
+                    <legend data-i18n="donationFrequencyLabel">Frequency</legend>
+                    <div class="donation-choice-grid">
+                      <label class="choice-option"><input type="radio" name="frequency" value="One-time" checked /><span data-i18n="donationFrequencyOnce">One-time</span></label>
+                      <label class="choice-option"><input type="radio" name="frequency" value="Monthly" /><span data-i18n="donationFrequencyMonthly">Monthly</span></label>
+                    </div>
+                  </fieldset>
+                  <div class="request-amount-fields step-fields" data-request-amount>
+                    <div class="form-row amount-row">
+                      <label><span data-i18n="donationAmountLabel">Intended amount</span><input name="amount" type="number" min="1" step="1" inputmode="numeric" required /></label>
+                      <label><span data-i18n="donationCurrencyLabel">Currency</span><select name="currency" required><option value="EUR">EUR</option><option value="USD">USD</option><option value="RWF">RWF</option></select></label>
+                    </div>
+                    <div class="amount-presets" role="group" aria-label="Suggested donation amounts" data-i18n-aria="donationAmountPresetsLabel">
+                      <button type="button" data-donation-amount="25" aria-pressed="false">25</button>
+                      <button type="button" data-donation-amount="50" aria-pressed="false">50</button>
+                      <button type="button" data-donation-amount="100" aria-pressed="false">100</button>
+                      <button type="button" data-donation-amount="250" aria-pressed="false">250</button>
+                    </div>
+                  </div>
                 </div>
-                <p class="checkout-status" data-checkout-status data-i18n="checkoutPending">
-                  Direct checkout activates after the council's merchant account is verified. Until then, these buttons
-                  prepare a secure payment-link request.
-                </p>
-              </article>
+              </fieldset>
 
-              <article class="payment-card bank-request-card">
-                <p class="label" data-i18n="bankDetailsLabel">Bank transfer</p>
-                <h4 data-i18n="bankDetailsTitle">Bank transfer by request</h4>
-                <p data-i18n="bankDetailsCopy">
-                  To reduce public exposure of bank details, transfer information is shared after a supporter submits a
-                  support request form.
-                </p>
-                <a
-                  class="button primary full"
-                  href="#donationForm"
-                  data-donation-method-target="Bank transfer"
-                  data-i18n="bankDetailsCta"
-                >Prepare a bank transfer</a>
-                <p class="form-note" data-i18n="bankDetailsNote">
-                  The council can verify the request, confirm the supported initiative, and send the correct transfer
-                  instructions directly.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="container donation-request-layout">
-          <div class="donation-request-copy">
-            <p class="eyebrow" data-i18n="donationRequestEyebrow">Donation request</p>
-            <h3 data-i18n="donationRequestHeading">Need an invoice, transfer, or payment help?</h3>
-            <p data-i18n="donationRequestIntro">
-              Use the secure checkout above when it is active. Use this form to request card-payment help, verified
-              bank-transfer instructions, a pro forma invoice, or initiative-specific support.
-            </p>
-            <ol class="donation-steps">
-              <li>
-                <span>1</span>
-                <div>
-                  <h4 data-i18n="donationStepOneTitle">Choose your support</h4>
-                  <p data-i18n="donationStepOneCopy">Select a project, frequency, intended amount, and preferred payment route.</p>
+              <fieldset class="support-step">
+                <legend><span class="step-number" aria-hidden="true">02</span><span data-i18n="supportStepPayment">Payment preference</span></legend>
+                <div class="step-fields">
+                  <label><span data-i18n="donationMethodLabel">Preferred payment route</span>
+                    <select name="payment_method" required aria-describedby="payment-note">
+                      <option value="Bank transfer" data-i18n="donationMethodBank">Bank transfer</option>
+                      <option value="Card payment" data-i18n="donationMethodCard">Card payment</option>
+                      <option value="Need guidance" data-i18n="donationMethodGuidance">I need guidance</option>
+                    </select>
+                  </label>
+                  <p class="payment-note" id="payment-note" data-payment-note role="status">Bank-transfer details will be sent privately after the council reviews your request.</p>
+                  <label class="checkbox-line"><input type="checkbox" name="proforma_invoice_requested" value="Yes" data-invoice-toggle aria-controls="invoiceFields" aria-expanded="false" /><span data-i18n="donationInvoiceToggle">I need a pro forma invoice before payment.</span></label>
+                  <div class="invoice-fields" id="invoiceFields" data-invoice-fields hidden>
+                    <label><span data-i18n="donationInvoiceNameLabel">Invoice name / legal entity</span><input name="invoice_name" disabled /></label>
+                    <label><span data-i18n="donationInvoiceIdLabel">Registration or tax ID (optional)</span><input name="invoice_id" disabled /></label>
+                    <label><span data-i18n="donationInvoiceAddressLabel">Invoice address</span><textarea name="invoice_address" rows="3" disabled></textarea></label>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <span>2</span>
-                <div>
-                  <h4 data-i18n="donationStepTwoTitle">Submit your details</h4>
-                  <p data-i18n="donationStepTwoCopy">The request is sent securely to QS Impact Kigali Council.</p>
-                </div>
-              </li>
-              <li>
-                <span>3</span>
-                <div>
-                  <h4 data-i18n="donationStepThreeTitle">Receive instructions</h4>
-                  <p data-i18n="donationStepThreeCopy">The council confirms the next step and provides the correct payment document or link.</p>
-                </div>
-              </li>
-            </ol>
-          </div>
+              </fieldset>
 
-          <form
-            class="donation-form"
-            id="donationForm"
-            action="https://api.web3forms.com/submit"
-            method="POST"
-          >
-            <input type="hidden" name="access_key" value="0c1c963b-fa57-43c3-970d-b88466e59a18" />
-            <input type="hidden" name="subject" value="New donation request - QS Impact Kigali Council" />
-            <input type="hidden" name="from_name" value="QS Kigali Support Page" />
-            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" />
-            <p class="label" data-i18n="donationFormLabel">Donation or sponsorship request</p>
+              <fieldset class="support-step" data-contact-fields>
+                <legend><span class="step-number" aria-hidden="true">03</span><span data-i18n="supportStepContact">Your contact details</span></legend>
+                <div class="step-fields">
+                  <label><span data-i18n="donationDonorTypeLabel">Donor type</span><select name="donor_type" required><option value="Individual" data-i18n="donationDonorIndividual">Individual</option><option value="Company / organization" data-i18n="donationDonorCompany">Company / organization</option></select></label>
+                  <label data-organization-field hidden><span data-i18n="donationOrganizationLabel">Company or organization (optional)</span><input name="organization" autocomplete="organization" disabled /></label>
+                  <div class="form-row">
+                    <label><span data-i18n="donationNameLabel">Full name</span><input name="name" autocomplete="name" required /></label>
+                    <label><span data-i18n="donationEmailLabel">Email</span><input name="email" type="email" autocomplete="email" required /></label>
+                  </div>
+                  <details class="message-details"><summary data-i18n="donationMessageLabel">Message (optional)</summary>
+                    <label><span class="sr-only" data-i18n="donationMessageLabel">Message (optional)</span><textarea name="message" rows="3" data-i18n-placeholder="donationMessagePlaceholder" placeholder="Add any details the council should know about your intended support."></textarea></label>
+                  </details>
+                </div>
+              </fieldset>
 
-            <fieldset class="donation-fieldset">
-              <legend data-i18n="donationFrequencyLabel">Frequency</legend>
-              <div class="donation-choice-grid">
-                <label class="choice-option">
-                  <input type="radio" name="frequency" value="One-time" checked />
-                  <span data-i18n="donationFrequencyOnce">One-time</span>
-                </label>
-                <label class="choice-option">
-                  <input type="radio" name="frequency" value="Monthly" />
-                  <span data-i18n="donationFrequencyMonthly">Monthly</span>
-                </label>
+              <div class="request-submit" data-request-submit>
+                <button class="button primary full" type="submit" data-i18n="donationSubmit">Request donation instructions</button>
+                <p class="form-note" data-i18n="donationSafetyNote">This form does not take payment. Never enter card numbers, CVV codes, banking passwords, or PINs here.</p>
               </div>
-            </fieldset>
-
-            <div class="form-row amount-row">
-              <label>
-                <span data-i18n="donationAmountLabel">Intended amount</span>
-                <input name="amount" type="number" min="1" step="1" inputmode="decimal" required />
-              </label>
-              <label>
-                <span data-i18n="donationCurrencyLabel">Currency</span>
-                <select name="currency" required>
-                  <option value="EUR">EUR</option>
-                  <option value="USD">USD</option>
-                  <option value="RWF">RWF</option>
-                </select>
-              </label>
-            </div>
-
-            <div class="amount-presets" role="group" aria-label="Suggested donation amounts" data-i18n-aria="donationAmountPresetsLabel">
-              <button type="button" data-donation-amount="25" aria-pressed="false">25</button>
-              <button type="button" data-donation-amount="50" aria-pressed="false">50</button>
-              <button type="button" data-donation-amount="100" aria-pressed="false">100</button>
-              <button type="button" data-donation-amount="250" aria-pressed="false">250</button>
-            </div>
-
-            <label>
-              <span data-i18n="donationInitiativeLabel">Initiative to support</span>
-              <select name="initiative" required>
-                <option value="KOMEZA WIGE INITIATIVE" data-i18n="interestSponsorship">KOMEZA WIGE INITIATIVE</option>
-                <option value="1000 Trees Initiative" data-i18n="interestTrees">1000 Trees Initiative</option>
-                <option value="Climate Education & Global Days of Action" data-i18n="donationInitiativeClimate">Climate Education & Global Days of Action</option>
-                <option value="Safe Learning & Playground Restoration" data-i18n="donationInitiativeSafety">Safe Learning & Playground Restoration</option>
-                <option value="General Support" data-i18n="supportRowGeneralTitle">General Support</option>
-              </select>
-            </label>
-
-            <div class="form-row">
-              <label>
-                <span data-i18n="donationDonorTypeLabel">Donor type</span>
-                <select name="donor_type" required>
-                  <option value="Individual" data-i18n="donationDonorIndividual">Individual</option>
-                  <option value="Company / organization" data-i18n="donationDonorCompany">Company / organization</option>
-                </select>
-              </label>
-              <label>
-                <span data-i18n="donationMethodLabel">Preferred payment route</span>
-                <select name="payment_method" required>
-                  <option value="Bank transfer" data-i18n="donationMethodBank">Bank transfer</option>
-                  <option value="Card payment" data-i18n="donationMethodCard">Card payment</option>
-                  <option value="Need guidance" data-i18n="donationMethodGuidance">I need guidance</option>
-                </select>
-              </label>
-            </div>
-
-            <div class="form-row">
-              <label>
-                <span data-i18n="donationNameLabel">Full name</span>
-                <input name="name" autocomplete="name" required />
-              </label>
-              <label>
-                <span data-i18n="donationOrganizationLabel">Company or organization (optional)</span>
-                <input name="organization" autocomplete="organization" />
-              </label>
-            </div>
-
-            <label>
-              <span data-i18n="donationEmailLabel">Email</span>
-              <input name="email" type="email" autocomplete="email" required />
-            </label>
-
-            <label class="checkbox-line">
-              <input type="checkbox" name="proforma_invoice_requested" value="Yes" data-invoice-toggle />
-              <span data-i18n="donationInvoiceToggle">I need a pro forma invoice before payment.</span>
-            </label>
-
-            <div class="invoice-fields" data-invoice-fields hidden>
-              <label>
-                <span data-i18n="donationInvoiceNameLabel">Invoice name / legal entity</span>
-                <input name="invoice_name" />
-              </label>
-              <label>
-                <span data-i18n="donationInvoiceIdLabel">Registration or tax ID (optional)</span>
-                <input name="invoice_id" />
-              </label>
-              <label>
-                <span data-i18n="donationInvoiceAddressLabel">Invoice address</span>
-                <textarea name="invoice_address" rows="3"></textarea>
-              </label>
-            </div>
-
-            <label>
-              <span data-i18n="donationMessageLabel">Message (optional)</span>
-              <textarea
-                name="message"
-                rows="4"
-                data-i18n-placeholder="donationMessagePlaceholder"
-                placeholder="Add any details the council should know about your intended support."
-              ></textarea>
-            </label>
-
-            <button class="button primary full" type="submit" data-i18n="donationSubmit">Request donation instructions</button>
-            <p class="form-note form-safety-note" data-i18n="donationSafetyNote">
-              This form does not take payment. Never enter card numbers, CVV codes, banking passwords, or PINs here.
-            </p>
-            <div class="form-status" id="donationFormStatus" role="status" aria-live="polite" hidden>
-              <p></p>
-            </div>
-          </form>
+              <div class="direct-checkout" data-direct-checkout hidden>
+                <p class="form-note" data-i18n="checkoutHandoff">Choose the final amount, currency and any available project reference on the provider's page. The selections on this form are not sent to the provider.</p>
+                <a class="button primary full" data-checkout-link href="#donationForm" hidden>Continue to secure checkout</a>
+              </div>
+              <div class="form-status" id="donationFormStatus" role="status" aria-live="polite" hidden><p></p></div>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -893,15 +797,18 @@
 
       <section class="partner-logo-section" id="partner-network" aria-labelledby="partner-network-heading">
         <div class="container partner-logo-heading">
-          <p class="eyebrow" data-i18n="partnerNetworkLabel">Partner network</p>
-          <h2 id="partner-network-heading" data-i18n="partnerNetworkHeading">Our partners.</h2>
+          <div>
+            <p class="eyebrow" data-i18n="partnerNetworkLabel">Partner network</p>
+            <h2 id="partner-network-heading" data-i18n="partnerNetworkHeading">Our partners.</h2>
+          </div>
+          <button class="motion-toggle" type="button" data-motion-toggle aria-controls="partnerTrack" aria-pressed="false" data-i18n="pauseMotion">Pause animation</button>
         </div>
         <div
           class="container partner-logo-slider"
           aria-label="QS Impact Kigali Council partner organizations"
           data-i18n-aria="partnerNetworkAria"
         >
-          <div class="partner-logo-track">
+          <div class="partner-logo-track" id="partnerTrack">
             <div class="partner-logo-item">
               <img
                 src="assets/digital-connect-foundation-logo.jpg?v=20260911"
@@ -1029,6 +936,6 @@
       }
     </script>
     <script src="payment-config.js?v=20260827"></script>
-    <script src="script.js?v=20261005-green-heroes"></script>
+    <script src="script.js?v=20261006-ui-refinement"></script>
   </body>
 </html>
